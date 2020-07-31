@@ -58,9 +58,19 @@ Put Acknowledgements here.
 
 #### Introduction 
 
-- The Andes have a lot of plants
-- We don't know much about their reproductive strategies and interactions with pollinators
-- It's good to know this because the evolution of pollination syndromes is in many clades, closely linked to speciation. 
+
+The Andes comprise the highest mountains in the western hemisphere and are one of the most biodiverse regions on Earth [@myers_2000]. With a mean elevation of 4000 m, the Andes encompass a wide environmental gradient ranging from warm Amazonian rainforests, to dry, montane grasslands. Following Andean orogeny, flowering plants dispersed and adapted to these myriad niches, e.g. _Lupinus_ L. [Fabaceae, @hughes_2006], eucentropogonids [Campanulaceae, @lagomarsino_2016], epiphytic orchids [Epidendroideae, @perez_2017]. Today, about 10% of global angiosperm diversity is found in the Andes eco-region [@joppa_2011]. 
+
+&emsp;&emsp; Plant-pollinator coevolution offers a powerful model explaining the rapid diversification of the Andean flora [e.g. @kay_2005;@lagomarsino_2017; @serrano_2017;]. As a plant species expands into a novel montane environment floral traits may drift, evolve via pleiotropy, or adapt to a pre-existing pollinator community [@harder_2009; @smith_2016]. Subsequently, divergence in floral phenotype can be reinforced when reciprocal adaptation between the plant and pollinator promotes floral isolation [sensu @grant_1949]. However, despite compelling phenotypic and phylogenetic evidence, many putative cases of pollinator-driven plant diversification lack a direct observation of floral visitation and pollination. In this study, we aimed to test the theory of hummingbird-mediated diversification in _Centropogon_ C.Presl (Campanulaceae) by recording pollinator visits, performing a pollinator exclusion experiment, and synthesizing evidence from related studies. 
+
+Start paragraph about Centropogon. 
+
+
+
+
+
+X The Andes have a lot of plants
+X It's good to know this because the evolution of pollination syndromes is in many clades, closely linked to speciation. 
 - Recently, Centropogon has been of interest because it is young and speciose
 - Summarise what we know about Centropogon evolution/speciation 
   - Figure 1. Elevational distribution.
