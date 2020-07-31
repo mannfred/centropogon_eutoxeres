@@ -1,0 +1,87 @@
+---
+title: "Floral development and pollination of _Centropogon granulosus_ in an Andean cloud forest"
+author:
+date: ""
+output: 
+  word_document:
+    fig_caption: yes
+    reference_docx: centropogon_biology_reference.docx
+  # html_document:
+  #   number_sections: no
+  #   theme: flatly
+   # pdf_document:
+   #  latex_engine: xelatex
+bibliography: centropogon_biology.bib
+csl: cell.csl
+link-citations: true #'yes' for html, 'true' for pdfs
+linkcolor: blue
+urlcolor: blue
+citecolor: blue
+
+
+---
+
+**Author Names**: <br> 
+Mannfred M.A. Boehm$^{1,2,*}$, David Guevara Apaza$^{3}$ + others
+
+$^*$**Corresponding Author**: mannfred.boehm@ubc.ca
+
+**Author affiliations**: <br> 
+$^1$Department of Botany, University of British Columbia,
+3156 - 6270 University Boulevard, Vancouver, BC, Canada, V6T 1Z4. <br>
+
+$^2$Biodiversity Research Centre, University of British Columbia, 2212 Main Mall, Vancouver, BC, Canada, V6T 1Z4. <br>
+
+$3$Facultad de Ciencias Biológicas, Universidad San Antonio Abad del Cusco, Av. de La Cultura 773, Cusco 08000, Peru. 
+
+**Submission Type**: Brief Communications 
+
+**Abstract**: (200 max for Botany) 
+
+**Main Body**: (4200 max for Botany) 
+
+**Figures**: # Figures
+
+**Keywords**: (3-6 for Botany)
+
+
+
+\newpage
+
+
+#### Acknowledgements
+
+Put Acknowledgements here. 
+
+
+\newpage
+
+#### Introduction 
+
+- The Andes have a lot of plants
+- We don't know much about their reproductive strategies and interactions with pollinators
+- It's good to know this because the evolution of pollination syndromes is in many clades, closely linked to speciation. 
+- Recently, Centropogon has been of interest because it is young and speciose
+- Summarise what we know about Centropogon evolution/speciation 
+  - Figure 1. Elevational distribution.
+- In this paper we detail the development and pollination of Centropogon granulosus inhabiting a cloud forest in southeastern Peru. 
+
+\newpage
+
+#### Methods
+
+- Dates in the field. 
+- Pollination exclusion experiment [see Figure 1 in @sun_2017]. How many Centropogon sampled (n=???)
+- camera traps (number of traps, number of Centropogon)
+- Using camera trap data to manually record Sicklebills
+
+\newpage
+
+#### Results: 
+  - Figure 2. Developmental stages of Centropogon. 
+  - Figure 3. Pollination by Sicklebills
+  - Discuss things that live in or around the flowers (ants (cite Stein and LauraLago), mites (cite MacGregor), arachnids)
+  
+# References
+  
+
