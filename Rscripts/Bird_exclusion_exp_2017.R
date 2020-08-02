@@ -6,9 +6,8 @@ library(tidyverse)
 # -----------------------
 # import data
 
-mydata <- read.csv(here('Data/means_melted.csv', header = TRUE))
-head(mydata)
-print(mydata)  
+mydata <- read.csv(here('Data/means_melted.csv'), header = TRUE)
+ 
 
 
 as.factor(mydata$group)
@@ -32,18 +31,20 @@ is.numeric(mydata$days)
 # ---------------------
 # survival analysis
 
+# for survival::Surv() function, 
+# when event time > censoring time (censored) = 1
+# when event time < censoring time (fruit formation observed) = 2
 
 
-
-cage <- read.csv('survival_analysis_bird_cage.csv', header=T)
-control <- read.csv('survival_analysis_no_treatment.csv', header=T)
+cage <- read.csv(here('Data/survival_analysis_bird_cage.csv'), header=T)
+control <- read.csv(here('Data/survival_analysis_no_treatment.csv'), header=T)
 
 tail(control) # 0 = censored
 
 time1 <- cage$time
-status1 <- cage$censored
+status1 <- cage$status
 time2 <- control$time
-status2 <- control$censored
+status2 <- control$status
 
 fit1 <- survfit(Surv(time1, status1) ~ 1)
 fit2 <- survfit(Surv(time2, status2) ~ 1)
@@ -56,7 +57,7 @@ title(main='KM-Curves for post-anthesis flower survival')
 
 #log rank test
 
-logrank <- read.csv('survival_analysis_log_rank_test.csv', header=T)
+logrank <- read.csv(here('Data/survival_analysis_log_rank_test.csv'), header=T)
 
 time <- logrank$time
 status <- logrank$censored
