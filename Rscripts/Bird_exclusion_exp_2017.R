@@ -1,10 +1,17 @@
 library(here)
 library(survival)
+library(survminer)
 library(tidyverse)
 
 
 # -----------------------
 # import data
+
+# Bird_exclusion_exp_2017.xslx ->
+# broken into many .csvs (Bird_cage_x.csv, No_treat_x.csv) ->
+# compiled (averaged) into means_bird_cage.csv and means_no_treat.csv -> (but did not consider that data was censored! I should maybe get these values AFTER the survival analysis) 
+# combined into means_melted.csv 
+
 
 mydata <- read.csv(here('Data/means_melted.csv'), header = TRUE)
  
@@ -31,26 +38,49 @@ is.numeric(mydata$days)
 # ---------------------
 # survival analysis
 
+# data structure: count how many days from stage 5 (anthesis) until either fruit set or censor date. 
 # for survival::Surv() function, 
 # when event time > censoring time (censored) = 1
 # when event time < censoring time (fruit formation observed) = 2
+# treatment = 1 (bird cage), treatment = 2 (control)
+# "status" = "censored"
+# time = number of days that the individual existed in the experiment 
 
-
-cage <- read.csv(here('Data/survival_analysis_bird_cage.csv'), header=T)
+# import data
+treatment <- read.csv(here('Data/survival_analysis_bird_cage.csv'), header=T)
 control <- read.csv(here('Data/survival_analysis_no_treatment.csv'), header=T)
+data <- read.csv(here('Data/survival_analysis.csv'), header = T)
 
-tail(control) # 0 = censored
 
-time1 <- cage$time
-status1 <- cage$status
-time2 <- control$time
-status2 <- control$status
+# fit survival models
+treatment_fit <- survfit(Surv(data$treatment[1:29], treatment$status[1:29]) ~ 1)
+control_fit <- survfit(Surv(control$time[30:90], control$status[30:90]) ~ 1)
 
-fit1 <- survfit(Surv(time1, status1) ~ 1)
-fit2 <- survfit(Surv(time2, status2) ~ 1)
+t_fit <- survfit(Surv(data$treatment_time, data$treatment_status) ~ 1)
+c_fit <- survfit(Surv(data$control_time, data$control_status) ~ 1)
 
-plot(fit1, conf.int= 'none', col = 'blue', lwd=5, xlab = 'Time (days)', ylab = 'Survival Probability', xlim=c(0,30)) #bird cage
-lines(fit2, conf.int= 'none', col = 'red', lwd=5) #no treatment
+# combine models
+combined_fit <- list(t_fit, c_fit)
+
+# plot using survminer
+ggsurvplot(c_fit, data = data[, 4:6])
+ggsurvplot(t_fit, data = data[, 1:3])
+
+# colours
+cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+ggsurvplot_combine(
+  combined_fit, 
+  data = data,
+  conf.int = TRUE,
+  palette = cbbPalette[c(4,2)],
+  size = 2,
+  xlab = "Days since anthesis",
+  legend.labs = c("Hummingbirds excluded", "Control"),
+  )
+
+plot(treatment, conf.int= 'none', col = 'blue', lwd=5, xlab = 'Time (days)', ylab = 'Survival Probability', xlim=c(0,30)) #bird cage
+lines(control_fit, conf.int= 'none', col = 'red', lwd=5) #no treatment
 legend(14, 1,c('birds excluded', 'no treatment'), col = c('blue','red'), lty = 1)
 title(main='KM-Curves for post-anthesis flower survival')
 
