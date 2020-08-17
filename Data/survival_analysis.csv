@@ -1,4 +1,4 @@
-cage,treatment_time,treatment_status,control,control_time,control_status
+treatment,treatment_time,treatment_status,control,control_time,control_status
 1,9,2,2,8,2
 1,10,2,2,8,2
 1,6,1,2,9,2

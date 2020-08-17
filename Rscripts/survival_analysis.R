@@ -4,36 +4,6 @@ library(survminer)
 library(tidyverse)
 
 
-# -----------------------
-# import data
-
-# Bird_exclusion_exp_2017.xslx ->
-# broken into many .csvs (Bird_cage_x.csv, No_treat_x.csv) ->
-# compiled (averaged) into means_bird_cage.csv and means_no_treat.csv -> (but did not consider that data was censored! I should maybe get these values AFTER the survival analysis) 
-# combined into means_melted.csv 
-
-
-mydata <- read.csv(here('Data/means_melted.csv'), header = TRUE)
- 
-
-
-as.factor(mydata$group)
-mydata$stage<-as.factor(mydata$stage)
-as.numeric(mydata$days)
-
-
-
-ggplot(data = mydata, aes(x=stage, y=days)) + 
-  theme_minimal() +
-  geom_boxplot(aes(fill=group), alpha=0.7) +
-  theme_bw() + 
-  theme(panel.border = element_blank(), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) +
-  scale_fill_brewer(palette="Dark2")
-
-
-is.factor(mydata$group)
-is.factor(mydata$stage)
-is.numeric(mydata$days)
 
 # ---------------------
 # survival analysis
@@ -47,8 +17,6 @@ is.numeric(mydata$days)
 # time = number of days that the individual existed in the experiment 
 
 # import data
-treatment <- read.csv(here('Data/survival_analysis_bird_cage.csv'), header=T)
-control <- read.csv(here('Data/survival_analysis_no_treatment.csv'), header=T)
 data <- read.csv(here('Data/survival_analysis.csv'), header = T)
 
 
@@ -79,12 +47,11 @@ ggsurvplot_combine(
   legend.labs = c("Hummingbirds excluded", "Control"),
   )
 
-plot(treatment, conf.int= 'none', col = 'blue', lwd=5, xlab = 'Time (days)', ylab = 'Survival Probability', xlim=c(0,30)) #bird cage
-lines(control_fit, conf.int= 'none', col = 'red', lwd=5) #no treatment
-legend(14, 1,c('birds excluded', 'no treatment'), col = c('blue','red'), lty = 1)
+
 title(main='KM-Curves for post-anthesis flower survival')
 
 
+# -----------------------
 #log rank test
 
 logrank <- read.csv(here('Data/survival_analysis_log_rank_test.csv'), header=T)
