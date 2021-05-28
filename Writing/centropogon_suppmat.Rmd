@@ -1,0 +1,27 @@
+---
+title: "Supplementary Materials for: Floral development in an Andean bellflower (*Centropogon granulosus*, Campanulaceae) and pollination by Buff-tailed Sicklebill (*Eutoxeres condamini*)"
+author: 
+date: ""
+output: 
+  word_document:
+    fig_caption: yes
+    reference_docx: centropogon_biology_reference.docx
+  # html_document:
+  #   number_sections: no
+  #   theme: flatly
+   # pdf_document:
+   #  latex_engine: xelatex
+bibliography: centropogon_biology.bib
+csl: cell.csl
+link-citations: true #'yes' for html, 'true' for pdfs
+linkcolor: blue
+urlcolor: blue
+citecolor: blue
+
+---
+
+
+
+# References
+
+
