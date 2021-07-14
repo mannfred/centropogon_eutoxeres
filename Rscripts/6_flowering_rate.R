@@ -108,12 +108,26 @@ allmodels <-
   mutate(slope = c(bc_models2$estimate, ct_models2$estimate)) %>% 
   mutate(unique_ID = row_number())
 
-# mean and std dev of R^2
-mean(allmodels$adj.r.squared) #0.934
-sqrt(var(allmodels$adj.r.squared))#0.047
+# mean and std err of R^2
+mean(allmodels$adj.r.squared) #0.949
+sqrt(var(allmodels$adj.r.squared))#0.036
 
 # does adjusted R^2 vary between individuals
-summary(aov(adj.r.squared ~ unique_ID, data = allmodels))
+summary(lm(adj.r.squared ~ unique_ID, data = allmodels))
+
+
+# mean and std err of flowering rate (slope) 
+1/mean(ct_models2$estimate) # how many days bw anthesis events?
+sqrt(var(ct_models2$estimate))
+
+1/mean(ct_models2$estimate[-6]) # how many days bw anthesis events?
+sqrt(var(ct_models2$estimate[-6]))
+
+1/mean(bc_models2$estimate)
+sqrt(var(bc_models2$estimate))
 
 # does flowering rate vary between individuals?
-summary(aov(slope ~ unique_ID, data = allmodels))
+summary(lm(slope ~ unique_ID, data = allmodels))
+
+# does flowering rate vary between treatments?
+summary(lm(slope ~ treatment, data = allmodels))

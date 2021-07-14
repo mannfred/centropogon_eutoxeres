@@ -21,6 +21,12 @@ plants <-
 # save raw data
 saveRDS(plants, file = here('Data/derived_data/plant_occurrences.rds'))
 
+
+
+# ----------------------------------------
+
+plants <- readRDS(file = here('Data/derived_data/plant_occurrences.rds'))
+
 # simplfy data structure
 plants_simple <- plants$gbif$data
 

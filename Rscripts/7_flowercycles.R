@@ -152,17 +152,14 @@ ggplot(data = alldata, aes(x = elapsed_days, y = sum, color = factor(treatment),
   facet_grid(grouptreatment ~.) +
   mytheme
 
-# ----------------------------
-# stats
+# ------------------------------------------
+# calculate number of flowers open on any given day
 
-# pollinator-excluded
-mean(alldata$sum[1:60]) #1.58 +- 1.14
-sqrt(var(alldata$sum[1:60]))
 
-# controls
-mean(alldata$sum[61:147]) #0.84 +- 1.22
-sqrt(var(alldata$sum[61:147]))
+# shift sums so that min = 0
+alldata$sum[c(61:77, 124:147)] <- alldata$sum[c(61:77, 124:147)] + 2
+alldata$sum[86:99] <- alldata$sum[86:99] + 1
 
-# treatment has an effect on #flowers open
-lm(sum ~ treatment, data=alldata) %>% summary
-effectsize::hedges_g(sum ~ treatment,  data=alldata)
+# treatment has no effect on #flowers open 
+lmerTest::lmer(sum ~ treatment + (1|grouptreatment), data=alldata) %>% summary
+

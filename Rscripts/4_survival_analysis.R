@@ -4,7 +4,6 @@ library(survminer)
 library(tidyverse)
 
 
-
 # ---------------------
 # survival analysis
 
@@ -21,11 +20,9 @@ data <- read.csv(here('Data/survival_analysis.csv'), header = T)
 
 
 # fit survival models
-treatment_fit <- survfit(Surv(data$treatment[1:29], data$treatment_status[1:29]) ~ 1)
-control_fit <- survfit(Surv(data$control[30:90], data$control_status[30:90]) ~ 1)
-
 t_fit <- survfit(Surv(data$treatment_time, data$treatment_status) ~ 1)
 c_fit <- survfit(Surv(data$control_time, data$control_status) ~ 1)
+
 
 # combine models
 combined_fit <- list(t_fit, c_fit)
@@ -60,7 +57,33 @@ time <- logrank$time
 status <- logrank$censored
 treatment <- logrank$group
 
-fit <- survdiff(Surv(time, status) ~ treatment, rho =1)
-fit #Chisq= 4.5, 
-#p = 0.0336, p-value is the probability of obtaining a test statistic 
-#at least as extreme as the one that was actually observed. 
+fit <- survdiff(Surv(time=time, event=status) ~ treatment, rho = 0)
+fit 
+#Chisq= 4.514941, #p = 0.0336
+
+# calculate effect size (Z)
+coxph(Surv(time=time, event=status) ~ treatment) #z = 2.07
+
+
+# --------------------------------------------------------------------
+# are survival curves still different if berry development is removed?
+
+
+# what is the max longevity of a pollinator-excluded plant?
+# 14 days
+logrank %>% filter(group==1) %>% select(time) %>% max()
+
+# remove all entries that exceed 14 days
+logrank2 <-  logrank %>%  filter(time < 15)
+
+
+time2 <- logrank2$time
+status2 <- logrank2$censored
+treatment2 <- logrank2$group
+
+fit2 <- survdiff(Surv(time=time2, event=status2) ~ treatment2, rho = 0)
+fit2 
+#Chisq= 0.00, p=0.974
+
+# calculate effect size (Z)
+coxph(Surv(time=time2, event=status2) ~ treatment2) #z = 0.03

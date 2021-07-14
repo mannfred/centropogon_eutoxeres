@@ -1,3 +1,5 @@
+library(effectsize)
+library(emmeans)
 library(here)
 library(tidyverse)
 
@@ -59,6 +61,14 @@ mean(treatmt_flowers) #11.2
 sqrt(var(control_flowers)) #8.1
 sqrt(var(treatmt_flowers)) #4.6
 
+numberof_flowers <- data.frame(treatment = c(rep("control", length(control_flowers)),
+                         rep("treatmt", length(treatmt_flowers))),
+           flowers = c(control_flowers, treatmt_flowers))
+
+nof_model <- lm(flowers ~ treatment, data = numberof_flowers)
+pairs(emmeans(nof_model, "treatment"))
+
+cohens_f(nof_model)
 
 
 # ---------------------------------------

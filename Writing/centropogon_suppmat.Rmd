@@ -20,6 +20,156 @@ citecolor: blue
 
 ---
 
+&nbsp;
+&nbsp;
+
+Note: All data and scripts used in this study have been deposited
+in the Dryad Digital Repository (https://...)
+
+
+\newpage
+#### Eutoxeres
+
+
+
+\newpage
+#### Phenological modeling 
+
+To model flowering phenology of _C. granulosus_, we fit the following linear model to the rate of anthesis and senescence for each inflorescence that produced at least five flowers ($n$ = 6 controls, $n$ = 5 pollinator excluded): 
+
+$$n_i = \beta_0 + \beta_1*days + \epsilon$$
+
+&emsp;&emsp; Where $n_i$ is the cumulative number of flowers produced on an inflorescence at $days$=$i$, $\beta_0$ is the intercept, $\beta_1$ is the flowering rate, and $\epsilon$ is the residual error. 
+
+&emsp;&emsp; To determine if pollinator exclusion affected the total number of flowers produced, we fit the linear model:
+
+$$n_{total} = \beta_0 + \beta_1*treatment + \epsilon$$
+&emsp;&emsp; Where $\beta_0$ is the intercept, $\beta_1$ is a coefficient, and $\epsilon$ is the residual error. 
+
+&emsp;&emsp; To test for differences in male/female phase duration between treatments, we fit a generalized mixed-effects model for each phase in `lme4` vXXX [XXX]:
+
+$$n = \beta_0 + \beta_1*treatment + U_i + \epsilon$$
+
+&emsp;&emsp; Where $n$ is the duration of the specified phase, $U_i$ is the individual specific random effect, and all other variables are as above. Cohen's standardized effects ($d$) were calculated from $t$ values and degrees of freedom using `effectsize` v.0.4.4 [@shacar_2020]. 
+
+
+
+
+\newpage
+```{r include=FALSE} 
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+library(here)
+```
+
+
+```{r figureS1, echo=FALSE, fig.cap="Figure S1. Fused anther hairs forming a scale and serving as a lever to deposit pollen (red arrow). This individual has finished the male phase and is in transition to the female phase &mdash; the stigma will continue to extend past the scale and unfold when receptive (white arrow).", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S1.tif"))
+```
+
+\newpage
+```{r figureS2, echo=FALSE, fig.cap="Figure S2. Wire cages used to exclude avian visitors from accessing the nectaries of _C. granulosus_. Further details on the design can be found in Sun et al. [-@sun_2017].", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S2.jpg"))
+```
+
+
+\newpage
+```{r figureS3, echo=FALSE, fig.cap="Figure S3. Still frames extracted from a video recording of _E. condamini_ pollinating _C. granulosus_. A: The hummingbird approaches and inspects an inflorescence without any open flowers. B: A second inflorescence with an open flower is approached. C: To insert its bill, _E. condamini_ hovers below the flower opening and tilts its head backwards. D: During feeding, its head is at eye-level with the corolla opening and the anther/stigma is in contact with the crown.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S3.tif"))
+```
+
+\newpage
+```{r figureS4, echo=FALSE, fig.cap="Figure S4. A long-nosed bat (Glossophaginae) recorded near an inflorescence of _C. granulosus_ with several developing berries.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S4.jpg"))
+```
+
+\newpage
+```{r figureS5, echo=FALSE, fig.cap="Figure S5. A murid (Muridae, bottom left)  recorded near an inflorescence of _C. granulosus_ (top left) with several developing berries.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S5.jpg"))
+```
+
+\newpage
+```{r figureS6, echo=FALSE, fig.cap="Figure S6. Evidence of frugivory of a _C. granulosus_ berry.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S6.jpg"))
+```
+
+\newpage
+```{r figureS7, echo=FALSE, fig.cap="Figure S7. Herbivory of a _C. granulosus_ flower by a larval lepidoptran.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S7.jpg"))
+```
+
+\newpage
+```{r figureS8, echo=FALSE, fig.cap="Figure S8. An anthophilid collecting pollen from an anther scale of _C. granulosus_.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S8.png"))
+```
+
+\newpage
+```{r figureS9, echo=FALSE, fig.cap="Figure S9. Inflorescence of _C. granulosus_ with a multitude of peduncle scars (red arrow) suggestive of an extended flowering peak.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S9.tif"))
+```
+
+\newpage
+```{r figureS10, echo=FALSE, fig.cap="Figure S10. Flowering rate in _C. granulosus_. The $x$-axis represents the number of days elapsed since the first flower opened. The $y$-axis counts the cumulative number of flowers opened since $t$=0, not the number of flowers open simultaneously.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S10.tif"))
+```
+
+\newpage
+```{r figureS11, echo=FALSE, fig.cap="Figure S11. Flowering rates in _C. granulosus_ are constant, and not affected by pollinator exclusion.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S11.tif"))
+```
+
+\newpage
+```{r figureS12, echo=FALSE, fig.cap="Figure S12. The duration of male and female phases of flowering in _C. granulosus_ are not affected by pollinator exclusion.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S12.tif"))
+```
+
+\newpage
+```{r figureS13, echo=FALSE, fig.cap="Figure S13. Buff-tailed Sicklebill visiting _Heliconia aemygdiana_ Burle-Marx, and using the floral bract as a perch during feeding.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S13.jpg"))
+```
+
+
+
+\newpage
+
+
+```{r tableS1}
+
+  tableS1 <- read.csv(here('Data/Table_S1_monitoredlocations.csv'), header=TRUE)
+
+  knitr::kable(tableS1, caption = 'Table S1: Locations in San Pedro monitored for Sicklebill visitation to _C. granulosus_. The first column lists the  _C. granulosus_ individual identifiers.')
+
+```
+
+
+\newpage
+```{r tableS2}
+
+  tableS2 <- read.csv(here('Data/Table_S2_developmentstages.csv'), header=TRUE)
+
+  knitr::kable(tableS2, caption = 'Table S2: Stages of floral development in _C. granulosus_.')
+
+```
+
+
+\newpage
+```{r tableS3}
+
+  tableS3 <- read.csv(here('Data/Table_S3_observationseutoxeres.csv'), header=TRUE)
+
+  knitr::kable(tableS3, caption = 'Table S3: Camera trap records of _E. condamini_.')
+
+```
+
+
+\newpage
+```{r tableS4}
+
+  tableS4 <- read.csv(here('Data/Table_S4_observationsschistes.csv'), header=TRUE)
+
+  knitr::kable(tableS4, caption = 'Table S4: Camera trap records of _S. geofryii_.')
+
+```
+
 
 
 # References

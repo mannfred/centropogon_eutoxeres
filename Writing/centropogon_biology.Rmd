@@ -1,5 +1,5 @@
 ---
-title: "Floral development in an Andean bellflower (*Centropogon granulosus*, Campanulaceae) and pollination by Buff-tailed Sicklebill (*Eutoxeres condamini*)"
+title: "Floral development in an Andean bellflower (*Centropogon granulosus*, Lobelioidae) and pollination by Buff-tailed Sicklebill (*Eutoxeres condamini*)"
 author: 
 date: ""
 output: 
@@ -25,6 +25,8 @@ library(here)
 knitr::opts_knit$set(root.dir = here())
 ```
 
+&nbsp;
+
 **Author Names**: <br> 
 Mannfred M.A. Boehm$^{1,2,*}$, David Guevara Apaza$^{3}$, Jill E. Jankowski$^{2,4}$, Quentin C.B. Cronk$^{1,2}$
 
@@ -40,13 +42,15 @@ $^3$Facultad de Ciencias Biológicas, Universidad San Antonio Abad del Cusco, Av
 
 $^4$Department of Zoology, University of British Columbia, 4200&ndash;6270 University Boulevard, Vancouver, BC, Canada, V6T 1Z4. <br>
 
-**Submission Type**: 
+**Submission Type**: Brief Communication
 
-**Abstract**: 
+**Abstract**: 211 words
 
-**Main Body**:  
+**Main Body**:  3908 (including figure captions)
 
-**Figures**: # Figures
+**Figures**: 4 (Additional Figures in the Supplementary Materials)
+
+**Tables**: In Supp. Mat. only 
 
 **Keywords**: _Centropogon_, _Eutoxeres_, floral development, pollination,  Sicklebill, traplining
 
@@ -64,7 +68,9 @@ $^4$Department of Zoology, University of British Columbia, 4200&ndash;6270 Unive
 
 #### Acknowledgements
 
-Access to field sites was made possible by the Servicio Nacional Forestal y de Fauna Silvestre (SERFOR) of Peru and the generous staff of the Gallieto de las Rocas Lodge, San Pedro, Peru. The faculty and staff at the Universidad Nacional de San Antonio Abad del Cusco (UNSAAC) herbarium graciously assisted the permit application process. B. Freeman and M.N. Scholer organized ground transport to the field sites. J. Heavyside provided additional field assistance and allowed the use of his photograph in Figure 2C. J. Fahr, and others gave their expert identifications for Figures S3, S4, and S6 via iNaturalist (with permission). We thank R. Colwell for an insightful exchange that greatly improved the manuscript. M.M.A.B. acknowledges financial support from a Hesse Research Award in Ornithology, the Heliconia Society International, the University of British Columbia, and the Natural Sciences and Engineering Research Council (NSERC) of Canada Post-Graduate Scholarship program (GC-2017-Q4-00199). 
+Access to field sites was made possible by the Servicio Nacional Forestal y de Fauna Silvestre (SERFOR) of Peru, and Daniel Blanco and the generous staff of the Cock-of-the-Rock Lodge, San Pedro, Peru. The faculty and staff at the Universidad Nacional de San Antonio Abad del Cusco (UNSAAC) herbarium graciously assisted with the permit application process. B. Freeman and M. Scholer organized ground transport to the field sites. J. Fahr gave their expert identification for Figure S3 via iNaturalist. We thank A. Sargent and R. Colwell for feedback and discussions that greatly improved the manuscript. M.M.A.B. acknowledges financial support from a Hesse Research Award in Ornithology, the Heliconia Society International, the University of British Columbia, and the Natural Sciences and Engineering Research Council (NSERC) of Canada Post-Graduate Scholarship program.  
+
++ NSERC information for QC and JJ
 
 &nbsp;
 &nbsp;
@@ -72,7 +78,7 @@ Access to field sites was made possible by the Servicio Nacional Forestal y de F
 
 #### Author Contributions
 
-M.B. and Q.C. designed the study and D.A., J.J., and M.B. conducted the field work. M.B. analysed the data and wrote the first manuscript draft. All authors contributed to writing and editing the final manuscript. 
+M.B. and Q.C. designed the study, and D.A., J.J., and M.B. conducted the field work. M.B. analysed the data and wrote the first manuscript draft. All authors contributed to writing and editing the final manuscript. 
 
 &nbsp;
 &nbsp;
@@ -83,20 +89,30 @@ M.B. and Q.C. designed the study and D.A., J.J., and M.B. conducted the field wo
 Additional Supporting Information may be found online in the
 supporting information tab for this article.
 
+
+#### Abstract
+
+The Andean bellflowers ('centropogonids', Lobelioidae) have experienced some of the highest speciation rates ever recorded in the angiosperms. Their rapid radiation is correlated, in part, with the evolution of floral morphology, which is thought to have initiated and maintained reproductive isolation. For effective floral isolation, we expect floral shape to filter the local pollinator community such that interspecific pollen transfer is minimized. In the centropogonids, species with extremely curved flowers ('eucentropogonids') are predicted to be pollinated exclusively by one of two parapatric species of Sicklebill hummingbirds (*Eutoxeres*). Whereas pollination by the northernmost species (*E. aquila*) is relatively well-documented, very little is known about its southern congener, *E. condamini*. In this study we focused on the floral biology of _C. granulosus_, a eucentropogonid thought to be pollinated by *E. condamini* in the south portion of its range. Using camera traps stationed at flowering individuals, and a pollination exclusion experiment, we confirm that *E. condamini* is a visitor to *Centropogon granulosus*, and that visitation is necessary for fruit development. We also establish preliminary evidence for the congruence between floral phenology and hummingbird foraging behaviour in this system. Our results support the role of floral morphology as a source of divergence in the centropogonids, and also lays the groundwork for quantifying phenological flowering types for future comparative studies in this mega-diverse clade of Andean bellflowers. 
+
+
+
 \newpage
-
-
-
 
 #### Introduction 
 
-&nbsp;
+&emsp;&emsp; Plant-pollinator coevolution is an important biotic component of rapid Andean radiations.  During Pleioscene orogeny, numerous angiosperm clades diversified as they migrated and adapted to novel Andean environments [@gentry_1982]. In these vicariant montane populations, floral traits may drift, evolve via pleiotropy, or adapt to a pre-existing pollinator community [@harder_2009; @smith_2016]. Subsequently, divergence in floral phenotype can be reinforced when reciprocal adaptation between the plant and pollinator promotes floral isolation [@grant_1949; @thompson_2005]. This process is generally framed as a special case of ecological speciation [@gomez_2009; @althoff_2014], and is increasingly supported as a critical component of Andean floristic diversity [e.g. in _Costus_ L., @kay_2005; _Lupinus_ L., @hughes_2006; bromeliads, @givnish_2014; centropogonids, @lagomarsino_2016; epiphytic orchids, @perez_2017]. However, while phenotypic and phylogenetic evidence generally supports the model of coevolutionary diversification, the underlying microecological processes [*sensu* @dellinger_2020] are comparatively understudied. For example, the pollination syndrome concept is widely used in macroevolutionary models to assign pollination modes to understudied species [e.g. correlated evolution of floral traits and most effective pollinator, @dellinger_2020]. These models are powerful because a small sample of ecological data can be used to infer evolutionary patterns for an entire clade. Subsequently, there is a need to ‘close the loop’ by testing these predictions via field work focused on previously understudied taxa. These data can then be used to validate and update macroevolutionary models, thus iteratively refining our understanding of rapid plant radiations. 
 
-&emsp;&emsp; Plant-pollinator co-evolution is an important biotic driver of rapid Andean radiations.  During Pleioscene orogeny, numerous angiosperm clades diversified as they migrated and adapted to novel Andean environments [@gentry_1982]. In these vicariant montane populations floral traits may drift, evolve via pleiotropy, or adapt to a pre-existing pollinator community [@harder_2009; @smith_2016]. Subsequently, divergence in floral phenotype can be reinforced when reciprocal adaptation between the plant and pollinator promotes floral isolation [@grant_1949; @thompson_2005]. This process is generally framed as special case of ecological speciation [@gomez_2009; @althoff_2014], and is increasingly supported as a critical component of Andean floristic diversity [e.g. in _Costus_ L. @kay_2005; _Lupinus_ L. @hughes_2006; bromeliads @givnish_2014; centropogonids @lagomarsino_2016; epiphytic orchids @perez_2017]. However, while phenotypic and phylogenetic evidence generally supports the model of co-evolutionary diversification, the underlying microecological processes [sensu @dellinger_2020] are comparatively understudied. For example, while a macroevolutionary model might detect the correlated evolution of floral traits and pollination mode, there is a need to 'close the loop' by testing these predictions in the field via studies of pollination ecology. 
+&emsp;&emsp; Here, we investigated whether microecological processes (i.e. biotic interactions, floral development) support the theory of pollinator-mediated speciation in the mega-diverse Andean bellflowers (Campanulaceae): *Centropogon* C.Presl, *Siphocampylus* Pohl, and *Burmeistera* H.Karst & Triana. These genera form a South American clade of Lobelioideae known as the ‘centropogonids’, a group arising in the last five million years and diversifying into over 550 species [@lagomarsino_2014; @lagomarsino_2016]. This rapid radiation has been attributed to increased speciation rates driven by Andean uplift and the repeated evolution of hummingbird and bat pollination [@lagomarsino_2017]. The Andean clade _Centropogon_ section _Centropogon_ [@mcvaugh_1949] or ‘eucentropogonids’ [38 spp., @lagomarsino_2014] are distinct because of their elongated, hook shaped flower tube (Figure 1), and the presence of a scale made of fused hairs that serves as a lever to deposit pollen (Figure S1). Both traits are thought to be adaptations for pollination by Sicklebill hummingbirds (*Eutoxeres*), two parapatric species of large Hermits (Phaethornithinae) named for their dramatically curved bill (Julians FigureXXX). In addition to eucentropogonids, the unique bill shape of _Eutoxeres_ match the curved flowers of _Heliconia_ subgen. _Stenochlamys_ Baker and _Heliconia_ subgen. _Griggsia_ L.Andersson (Zingiberales).
 
-&emsp;&emsp; Here we investigated whether microecological processes (i.e. biotic interactions, floral development, local biogeography) support the theory of pollinator-mediated speciation in the mega-diverse Andean bellflowers (Campanulaceae): *Centropogon* C.Presl, *Siphocampylus* Pohl, and *Burmeistera* H.Karst & Triana. These generea form a South American clade of Lobelioideae known as the ‘centropogonids’ [@lagomarsino_2014]; a clade arising in the last five million years and diversifying into over 550 species [@lagomarsino_2016]. This rapid radiation has been attributed to increased speciation rates driven by Andean uplift and the repeated evolution of hummingbird and bat pollination [@lagomarsino_2017]. The Andean clade _Centropogon_ section _Centropogon_ [@mcvaugh_1949] or ‘eucentropogonids’ [38 spp., @lagomarsino_2014] are distinct because of their elongated, hook-shaped flower tube, and the presence of a scale made of fused hairs that serves as a lever to deposit pollen (Figure S1). Both traits are thought to be adaptations for pollination by Sicklebill hummingbirds (*Eutoxeres*): two species of large Hermits (Phaethornithinae) named for their dramatically curved bill (Figure 1). In addition to eucentropogonids, the unique bill shape of _Eutoxeres_ matches the curved flowers of _Heliconia_ subgen. _Stenochlamys_ Baker and _Heliconia_ subgen. _Griggsia_ L.Andersson (Zingiberales). The Hermits diverged early in the evolutionary history of hummingbirds [~26 Ma, @mcguire_2014], and represent one of two major hummingbird ecotypes: the trapliners [cf. territory holders, @janzen_1971]. _Eutoxeres_ diverged 21.5 Ma, and probably co-evolved extreme curvature within lowland Amazonia, before the uplift of the Andes [@stein_1987; @abrahamczyk_2017]. During a recent period of major Andean uplift (~5 Ma) _Centropogon_ colonized and radiated into novel montane habitat, with eucentropogonids evolving floral traits for pollination by _Eutoxeres_ [@lagomarsino_2017]. This may have meditated the elevational expansion of _Eutoxeres_, and explains their persistence beyond the range of _Heliconia_ [@stein_1987; @abrahamczyk_2017]. At present, _Eutoxeres_ has the largest elevational range of any Hermit hummingbird &mdash; it can be found in its ancestral range, the Amazonian lowlands, as well as the foothills and montane forests of the Andes up to 3300 m [@hinkelmann_2020]. However, the physiological pre-adaptations that allowed Sicklebills to expand upslope, and not other Hermits, remains unknown [@stiles_2004]. 
+&emsp;&emsp; The Hermits diverged early in the evolutionary history of hummingbirds [~26 Ma, @mcguire_2014] and are generally found in Neotropical lowland and lower montane forest. The 36 species of Hermits described have relatively long bills and tails, and represent one of two major foraging types, traplining [cf. territory holding, @janzen_1971; @sargent_2021]. _Eutoxeres_ diverged 21.5 Ma, and probably coevolved extreme bill curvature with lowland _Heliconia_, before the uplift of the Andes [@stein_1987; @abrahamczyk_2017]. During a recent period Andean uplift (~5 Ma) centropogonids colonized and radiated into novel montane habitat, with eucentropogonids evolving floral curvature, enabling pollination by _Eutoxeres_ [@lagomarsino_2017]. This may have meditated the elevational expansion of _Eutoxeres_, and explains their persistence beyond the range of _Heliconia_ [@stein_1987; @abrahamczyk_2017]. At present, _Eutoxeres_ has the largest elevational range of any Hermit clade &mdash; it can be found in its ancestral range, the Amazonian lowlands, as well as in the foothills and montane forests of the Andes up to 3300 m [@hinkelmann_2020]. 
 
-&emsp;&emsp; Recent work has supported the divergence of eucentropogonids coincident with adaptation to Sicklebill pollination [@lagomarsino_2017]. One of the hypotheses generated by this finding is that eucentropogonids are pollinated by White-tipped Sicklebill (*Eutoxeres aquila*, Costa Rica to northern Peru) or Buff-tailed Sicklebill (*E. condamini*, northern Peru to Bolivia). Indeed, previous studies have progressively supported White-tipped Sicklebill as a specialized pollinator of _Heliconia_ and eucentropogonids: this hummingbird is known to be a trapliner [@stiles_1985], it pollinates the aforementioned plants [@gill_1987; @maglianesi_2015; @morrison_2020], and network analyses of plant-hummingbird communities indicate that its curved bill contributes to niche partitioning [@maglianesi_2014; @sonne_2019]. In contrast, very little is known of its southern congener, _E. condamini_.  Thus, the goal of this study is to further test the theory of pollinator-meditated diversification in the eucentropogonids by examining the microecology of the Andean bellflower _Centropogon granulosus_ C.Presl and Buff-tailed Sicklebill in the cloud forests of southeastern Peru. We structured our approach by asking (1) Do local patterns of co-occurrence reflect the _Centropogon_-mediated expansion of Buff-tailed Sicklebill? (2) Is Buff-tailed Sicklebill a visitor of _C. granulosus_? (3) Does Sicklebill visitation affect the fitness of _C. granulosus_? and (4) Are phenological traits in _C. granulosus_ congruent with morphological evidence for Sicklebill pollination? While other eucentropogonid species are found in this region (Figure 1), here we focus on _C. granulosus_ as it is locally abundant and presents a tractable system for study. _E. condamini_ is the only Sicklebill species present at this latitude; its congener (*E. aquila*) occurs further north, from the Loreto region of northern Peru to the Cordillera Central of Costa Rica [@hinkelmann_2020]. 
+&emsp;&emsp; A recent analysis of floral trait macroevolution confirms that eucentropogonids exhibit a divergent floral morphology indicative of Sicklebill pollination [@lagomarsino_2017]. One of the hypotheses generated by this finding is that White-tipped Sicklebill (*Eutoxeres aquila*, Costa Rica to northern Peru) and/or Buff-tailed Sicklebill (*E. condamini*, northern Peru to Bolivia) are pollinators of the various eucentropogonid species.  Indeed, previous studies have progressively supported White-tipped Sicklebill as a specialized pollinator of _Heliconia_ and eucentropogonids: this hummingbird visits and pollinates the aforementioned plants [@stiles_1985; @gill_1987; @maglianesi_2015; @morrison_2020], its bill curvature matches the curved corollas of these plants more than its relatives [@maglianesi_2014; @sonne_2019], and its local abundance is correlated with seasonal patterns of flowering [@stiles_1985]. In contrast, very little is known of its southern congener, _E. condamini_. Like _E. aquila_, its curved bill appears to be adapted to feed from eucentropogonids. However, there is only one published record of visitation to a eucentropogonid [*Centropogon gamosepalus* Zahlbr., @stein_1987], and further details on the extent of mutualism have not yet been studied (e.g. effects of visitation on fruit set and seed production). 
+
+&emsp;&emsp; Furthermore, because this pollination system is presumably specialized, we expect additional aspects of the pollination syndrome, specifically phenology, to reflect adaptation to _Eutoxeres_ behaviour. In addition to the seasonal flowering trends documented by Stiles [-@stiles_1985], phenological patterns at finer temporal scales (i.e. days) should also conform to the daily foraging habits of *Eutoxeres*. Considering that *E. aquila* is a trapliner [@stiles_1985], the 'phenological ecotype' model of Gentry [-@gentry_1974] would predict that eucentropogonids exhibit a 'steady state' strategy that is adapted to low, but regular, daily visitation rates (compared to, e.g. flowering simultaneously in 'cornucopia' events). Because hummingbird communities tend to partition into foraging modes [@feinsinger_1978; @stiles_1985] we expect steady state flowering to be incongruent with the foraging behaviours of territorial hummingbirds. Although flowering rates of some centropogonids have been described qualitatively, e.g. *Centropogon valerii* Standl. [@colwell_1974], *Centropogon solanifolius* Benth. [@weiss_1996], flowering type has not yet been studied as a continuous trait. As with floral shape, flowering types are thought to evolve via competition for pollinators [@gentry_1974; @kessler_2020]. Thus, quantifying flowering rates in the context of pollinator foraging modes will be key to examining trait evolution across the centropogonids, and assessing the role of phenology in co-evolutionary diversification. 
+
+&emsp;&emsp; Thus, the goal of this study is to further test the theory of pollinator-meditated diversification in the eucentropogonids by examining the microecology of the Andean bellflower _Centropogon granulosus_ C.Presl and Buff-tailed Sicklebill (*Eutoxeres condamini*) in southeastern Peru (Figure 1). Specifically, we ask: (1) Is Buff-tailed Sicklebill a visitor of _C. granulosus_? (2) Does Sicklebill visitation affect the reproductive success of _C. granulosus_? (3) Is Buff-tailed Sicklebill visitation consistent with traplining behaviour? and (4) Is the flowering phenology of _C. granulosus_ consistent with adaptation to the foraging mode exhibited by Buff-tailed Sicklebill? 
+
+
 
 \newpage
 
@@ -106,34 +122,55 @@ supporting information tab for this article.
 #### Materials and Methods
 
 &nbsp;
+_Focal Species_
 
-_Field Site and Patterns of Occurrence_
+&emsp;&emsp; _Centropogon granulosus_ is an understory, vining subshrub with abruptly curved, tubular flowers. The flowers are bright red or orange, with yellow deltate lobes, and are positioned vertically on lignified, terminal inflorescences [@stein_1987; @lagomarsino_2014].  This species is both the most widespread and variable eucentropogonid, occurring from southern Nicaragua to Bolivia. Consequently, the collections representing this species are not monophyletic [@lagomarsino_2014], and may be reorganized in future treatments of Lobelioideae. The species examined here conforms to _Centropogon granulosus_ subsp. _granulosus_ [*sensu* @stein_1987]. While other eucentropogonid species are found in this region [@stein_1987], we focus on _C. granulosus_ as it has been previously studied with respect to _E. aquila_ pollination [@stiles_1985], and is locally abundant, providing a tractable system for study. 
 
-&emsp;&emsp; We based our field work at the Gallieto de las Rocas Lodge situated at ~1500 m a.s.l in the Kosñipata Valley, Cusco Region, Peru (-13.055, -71.548 DD, Figure 2). Research Permit No. 0441-2017 was administered by the Servicio Nacional Forestal y de Fauna Silvestre (SERFOR). The field site is situated within the cloud forests of the Yungas ecoregion (Figure XXX) on the eastern slope of the Peruvian Andes &mdash; mean annual rainfall and temperature is 2631 mm and 19.1 &deg;C, respectively [@salinas_2011]. 
+&emsp;&emsp; Very little is known of Buff-tailed Sicklebill: Stein [-@stein_1987] described _Eutoxeres_ as "not particularly rare, [but] seldom seen". Beyond occurrence records and taxonomic treatments, scant natural history information is available for this hummingbird (e.g. nesting biology, foraging behaviours, mating). What is presumed to be known of this species tends to have been inferred from its relatively well studied congener, White-tipped Sicklebill. _E. condamini_ is the only Sicklebill species present at this latitude (Figure 1); its congener (*E. aquila*) occurs further north, from the Loreto region of northern Peru to the Cordillera Central of Costa Rica [@hinkelmann_2020]. 
 
-&emsp;&emsp; To estimate local patterns of co-occurrence, we first located putatively Sicklebill-pollinated eucentropogonid and _Heliconia_ species (subgenera _Stenochlamys_ and _Griggsia_) documented within a ~100 km radius of the field site, using the 'Geographic Search' function in Tropicos v3.2.2 [@missouri_2021]. We then queried the Global Biodiversity Information Facility [XXX] for occurrence records. Because there are limited data for these clades, we expanded the search to include adjacent regions (Madre de Dios, Puno, and northwest to Huánuco and Ucayali) while remaining outside the range of White-tipped Sicklebill (Figure XXX). Occurrence data were obtained using `rgbif` v3.3.0 [@chamberlain_2021] and validated by `scrubr` v0.3.2 [@chamberlain_2020]. Elevation was estimated from latitude-longitude data (30 m resolution) associated with the GBIF records using `rgbif::elevation()`. We used the same protocol for a genus-wide search of _Eutoxeres_ occurrences; this allowed us to check for the presence of _E. aquila_ within the study region.  For comparative purposes, we haphazardly selected four species each from the sister clades of Sicklebill-pollinated _Heliconia_ [@iles_2017] and _Centropogon_ [@lagomarsino_2014]. We also selected Green Hermit hummingbird (*Phaethornis guy*), the closest relative to _Eutoxeres_ that reliably occurs at the study site. We acquired occurrence data for these sister clades as described above. 
+&nbsp;
+_Field Site_
+
+&emsp;&emsp; We based our field work at the Cock-of-the-Rock (Gallieto de las Rocas) Lodge situated at ~1350 m a.s.l in the Kosñipata Valley, Cusco Region, Peru (-13.055, -71.548 DD, Figure 1). Research Permit No. 0441-2017 was administered by the Servicio Nacional Forestal y de Fauna Silvestre (SERFOR). The field site is situated at the transition of lower montane forest and cloud forest within the Yungas ecoregion on the eastern slope of the Peruvian Andes. Local mean annual rainfall and temperature is 2631 mm and 19.1 &deg;C, respectively [@salinas_2011]. 
+
+```{r figure1, echo=FALSE, fig.cap="Figure 1. Top left: Elevational heatmap of Peru and neighbouring countries. Coloured cells represent meters above sea level. . Map generated using `tmap` v.3.3-2 [@tennekes_2018]. Study site location is marked with a cross. Top right: Montane cloud forests of the eastern Andes (San Pedro, Peru). Bottom: *C. granulosus*, an understory vine often flowering at edges and treefall gaps.", out.width = '100%'}
+ knitr::include_graphics(here("Figures/Figure_1.tif"))
+```
 
 &nbsp;
 
 _Pollinator Observations_
 
-&emsp;&emsp; We deployed five camera traps (Hyperfire HC600, Reconyx Inc.) near _Centropogon granulosus_ vines located in a previous survey of the area [@boehm_2018_a]. Camera traps were checked for new captures every 12 hours. If no floral visitors were recorded within three days, the camera traps were moved to different _Centropogon_ individuals. Where floral visitors were recorded, we attempted targeted (manual) video recording to better document visitation behaviour. Camera traps were active continuously from August 17 to September 20, 2017. Monitored locations are listed in Table S1. 
+&emsp;&emsp; We deployed five camera traps (Hyperfire HC600, Reconyx Inc.) near _Centropogon granulosus_ vines located in a previous survey of the area [@boehm_2018_a]. Cameras were mounted onto nearby trees using bungee cord, typically at a distance of 1-2 meters from an inflorescence, and when possible, at a height equivalent to the inflorescence. Camera traps were checked for new captures every 12 hours. If no floral visitors were recorded within three days, the camera traps were moved to different _C. granulosus_ individuals. Where floral visitors were recorded, we attempted targeted (manual) video recording to better document visitation behaviour. Camera traps were active continuously from August 17 to September 20, 2017. Monitored locations are listed in Table S1. 
 
 &nbsp;
 
 _Pollinator Exclusion Experiment_
 
-&emsp;&emsp; Following the methods of Sun et al. [-@sun_2017], we constructed and deployed wire cages covering one inflorescence each from six _Centropogon_ individuals (Figure S2). Wire cages prevent hummingbirds from contacting the flowers while allowing invertebrates to move freely. An additional ten inflorenscences were tagged and monitored as controls. Using the control flowers, we defined four stages of floral development (Table 1). These stages were used to quantify and compare the developmental trajectories of the control and pollinator-excluded flowers. Monitoring of a flower stopped when 1) berry development completed (stage 4), 2) the flower died prematurely, or 3) the study period ended. Daily observations were recorded between August 17 and September 20, 2017. Floral development data was analysed in R v4.0.2 [@R_2017] and organized using `here` v0.1 [@muller_2017] and `tidyverse` v1.3.0 [@wickham_2019] . All data and R scripts are available as an RStudio Project [@rstudio_2021] at DRYAD LINK. 
+&emsp;&emsp; Following the methods of Sun et al. [-@sun_2017], we constructed and deployed wire cages covering one inflorescence each from six _Centropogon_ individuals (Figure S2). Wire cages prevent hummingbirds from accessing the flowers while allowing invertebrates to move freely. An additional ten inflorescences were marked with cardstock tags tied to the stem and monitored as controls. Using the control flowers, we defined six stages of floral development (Table S2). These stages were used to quantify and compare the developmental trajectories of the control and pollinator-excluded flowers. Monitoring of a flower stopped when (1) berry development completed (stage F), (2) the flower died prematurely, or (3) the study period ended. Daily observations were recorded between August 17 and September 20, 2017. Floral development data was analysed in R v.4.0.2 [@R_2017] and organized using `here` v.0.1 [@muller_2017] and `tidyverse` v.1.3.0 [@wickham_2019]. All data and R scripts are available at (Dryad link). 
 
-&emsp;&emsp; Flowering stage data was staggered because each flower developed independently. The data was also fragmented because some samples abscissed prematurely due to herbivory or weather. This type of data was treated as 'right-censored', i.e. some flowers exited the study before reaching maturity [@allison_2014]. Similarly, we collected data from flowers that had already progressed past the initial stages ('left censored'). Although manually aligning the developmental data is possible, for convenience we used a multiple sequence alignment protocol to automate the process. To do this, we first pruned the sequence fragments into 'early' (stages 1 and 2) or 'late' (stages 3 and 4) types. We then aligned all fragments of one type through ClustalW implemented in the R package `msa` v.3.9 [@bodenhofer_2015] with a neutral (identity) substitution matrix. Aligned sequences were then used to compute a consensus sequence for the 'early' and 'late' stages &mdash; this was done using the `ConsensusSequence()` function in `DECIPHER` v2.14.0 [@wright_2015]. The consensus was computed with a 15% threshold (the maximum proportion of sequences not represented at any given position). The consensus 'early' and 'late' sequences were then spliced to give the full consensus sequence of floral development. This process was repeated separately for both the control and pollinator-excluded data.  
+&emsp;&emsp; Flowering stage data were fragmented because some samples wilted prematurely due to herbivory or weather. This type of data is 'right censored', i.e. these flowers exited the study before reaching maturity [@allison_2014]. Similarly, we collected data from flowers that had already progressed past the initial stages ('left censored').
 
-&emsp;&emsp; We conducted an event history analysis [@allison_2014] to compare the probability of post-anthesis survival between pollinator-excluded and control flowers. First, we counted the number of days elapsed from anthesis (Stage C) through berry development (Stage D) for each flower ($n$), and pooled the data for control ($n$ = 61) and pollinator-excluded ($n$ = 29) plants.  Daily survival probability (from anthesis) was calculated for each treatment using the `survival` package v3.1 [@therneau_2015]. Differences in survival probability were evaluated by a log-rank test [@peto_1972] using the `survival::survdiff()` function.
+We conducted a multistate time-to-event analysis.
+
+Since censoring will underestimate the duration of each stage, we removed duration records that were lower than the second quantile for each stage. 
+
+Although manually aligning the developmental data is possible, for convenience we used a multiple sequence alignment protocol to automate the process. To do this, we first sorted the sequence fragments into 'early' (stages A to C) or 'late' (stages D and F) types. We then aligned all fragments of one type through ClustalW implemented in the R package `msa` v.3.9 [@bodenhofer_2015] with a neutral (identity) substitution matrix. Aligned sequences were then used to compute a consensus sequence for the 'early' and 'late' stages &mdash; this was done using the `ConsensusSequence()` function in `DECIPHER` v.2.14.0 [@wright_2015]. The consensus was computed with a 20% threshold (the maximum proportion of sequences not represented at any given position). The consensus 'early' and 'late' sequences were then spliced to give the full consensus sequence of floral development. This process was repeated separately for both the control and pollinator-excluded data.  
+
+&emsp;&emsp; We then conducted an event history analysis [@allison_2014] to compare the probability of post-anthesis survival between pollinator-excluded and control flowers. First, we counted the number of days elapsed from anthesis (Stage C) through berry development (Stage F) for each flower, and pooled the data for control ($n$ = 61) and pollinator-excluded ($n$ = 29) plants.  Daily survival probability (from anthesis) was calculated for each treatment using the `survival` package v.3.1 [@therneau_2015]. Differences in survival probability were evaluated by a log-rank test [@peto_1972] using the `survival::survdiff()` function.
 
 &nbsp;
 
 _Flowering mode_
 
-&emsp;&emsp; To model flowering phenology of _C. granulosus_, we fit linear models to the rate of anthesis and senescence for each inflorescence that produced at least five flowers ($n$ = 6 controls, $n$ = 5 pollinator excluded).  We also examined whether pollinator-exclusion affected flower production and the timing of the male and female phases of anthesis. Model fits were evaluated in `broom` v.0.7.6 [@robinson_2021], Hedge's weighted effect sizes ($g$) were calculated in `effectsize` v0.4.4 [@shacar_2020] and trait variation was quantified by the `stats::aov()` function in R. Models are further described in the Supplementary Materials.  
+&emsp;&emsp; To characterize flowering phenology of _C. granulosus_, we used `broom` v.0.7.6 [@robinson_2021] to fit linear models to the anthesis rate for each inflorescence that produced at least five flowers ($n$ = 6 controls, $n$ = 5 pollinator excluded). The adjusted $R^2$ of the model fit was used to assess linearity. Comparisons of $R^2_{adj}$ between individuals and treatments were made using XXX. 
+
+To test for effects of pollinator exclusion on the duration of the male and female phases of anthesis, we fit generalized linear mixed effects models (GLMMs) in `lme4` v.1.1-26 [XXX, Supp. Mat.]. We used `fitdistrplus` 1.1-5 [XXX] to examine skewness and distribution families for the GLMMs, and `effectsize` v.0.4.4 [@shacar_2020] to compute Cohen's $d$. 
+
+
+
+
+  Tests and model parameters are further detailed in the Supplementary Materials.  
 
 \newpage
 
@@ -142,85 +179,101 @@ _Flowering mode_
 
 #### Results
 
-&nbsp;
-
-_Local Patterns of Occurrence_
-
-We located Tropicos records for six eucentropogonids, and five _Heliconia_ spp. within the Kosñipata Valley. For these 11 species, we obtained 313 GBIF records for the region of study &mdash; we also obtained 126 records of Buff-tailed Sicklebill. No observations of White-tipped Sicklebill were returned. We used these records to estimate the elevational distribution of Sicklebill-pollinated plants within the Kosñipata Valley. 95% of the _E. condamini_ observations occur with X to X m. 95% of the plant occurrences fall within XXX m.  
-
-At the genus level, _Centropogon_ spp. occur at higher elevations than 
-
-
-
-&nbsp;
-
 _Floral Visitors_
 
-&emsp;&emsp; Camera trap recordings and _in situ_ observations confirm Buff-tailed Sicklebill as a visitor to _Centropogon granulosus_ flowers (Figure 1, Figure S4, VIMEO). We recorded 12 visits to six _C. granulosus_ individuals over 32 days (Table 2, Table S1). Visitation tended to occur from 5:20 to 10:40 in the morning ($n$=9), and 12:40 to 16:30 in the afternoon ($n$=3), though these patterns were likely affected by our own activity in the area, including mist-netting. A total of seven flowers were probed from six _C. granulosus_ individuals, i.e. a second visit was recorded to an inflorescence as flowers opened sequentially.  We observed feeding both by perching on the lignified inflorescence ($n$=3), as well as hovering ($n$=9). We also recorded two instances of Sicklebills approaching and inspecting inflorescences without open flowers. Wedge-billed hummingbird (*Schistes geoffroyi*) was also recorded nectar robbing _C. granulosus_; further details can be found in Boehm [-@boehm_2018_b]. 
+Camera trap recordings and _in situ_ observations confirm Buff-tailed Sicklebill as a visitor to _Centropogon granulosus_ flowers (Figure 2, Figure S3, video footage available in Dryad Repository). We recorded 12 visits to six _C. granulosus_ individuals over 34 days (Table S3). Visitation tended to occur from 5:20 to 10:40 in the morning ($n$=9), and 12:40 to 16:30 in the afternoon ($n$=3), though these patterns may have been affected by our activity in the area. A total of seven flowers were probed from six _C. granulosus_ individuals, i.e. a second visit was recorded to an inflorescence as flowers opened sequentially.  _E condamini_ feeds both by perching on the lignified inflorescence ($n$=3), as well as hovering ($n$=9). We also recorded two instances of Sicklebills approaching and inspecting inflorescences without open flowers. Wedge-billed hummingbird (*Schistes geoffroyi*) was also recorded nectar robbing _C. granulosus_ by piercing the corolla tube at the base. No other hummingbirds were recorded visiting these flowers. Over the course of two days, a camera trap recorded five visits per day to the same inflorescence (Table S4). Further details can be found in Boehm [-@boehm_2018_b]. 
 
-&emsp;&emsp; Reviewing still frames from the video recording reveals an interesting feeding problem posed by the sharply curved flowers of _C. granulosus_. The hook-shape forces the hummingbird to raise its head so that it is facing skyward in order to insert the tip of its bill into the flower aperture (Figure S4), the remainder of the bill is further inserted by tilting the head back to resting position. Due to the unique morphology and orientation of _C. granulosus_ flowers, this maneuver is unlikely to be performed by any other hummingbird while hovering.  [COROLLA INFLATION pg 11 of lagomarsino_2018]
+```{r figure2, echo=FALSE, fig.cap="Figure 2. Pollination of _C. granulosus_ by Buff-tailed Sicklebill (*E. condamini*).", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_2.jpg"))
+```
 
-&emsp;&emsp; Two additional vertebrates, a murid and a long-nosed bat (Glossophaginae) were recorded near the inflorescences, but not observed to interact with the plant directly (Figures S5, S6).  We note this because it is unknown how the fleshy berries are dispersed. We did however document signs of partial frugivory (Figure S7). 
+&emsp;&emsp; Reviewing still frames from the video recording reveals an interesting feeding problem posed by the sharply curved flowers of _C. granulosus_. The hook shape forces the hummingbird to hover below the corolla opening and tilt its head backwards so that it is facing skyward, at which point it can insert the tip of its bill into the flower aperture (Figure S3). The remainder of the bill is further inserted by tilting the head back to resting position while lifting itself to eye level with the corolla opening. Due to the unique morphology and orientation of _C. granulosus_ flowers, this hovering maneuver is likely performed only by _Eutoxeres_. We note that once the bill is inserted, the throat and crown are covered by the ventral and dorsal corolla lobes, respectively. 
 
-&emsp;&emsp; Numerous invertebrates occupied or visited the flowers of _C. granulosus_ in this study. As found in previous studies, we observed ants [@stein_1992], mites [@naskrecki_1998], and dipterids [@weiss_1996] in or on the flowers of this species. Though *Anelosimus* spiders (Araneae) are known to build webs scaffolded by _Centropogon coccineus_ (Hook.) Regel ex B.D.Jacks. [@nentwig_1986], we observed unidentified Aranids inside of the floral tubes. We also recorded an unidentified larval leptidoptran inhabiting a flower (Figure S8). 
+&emsp;&emsp; Two additional vertebrates, a murid (Muridae) and a long-nosed bat (Glossophaginae) were recorded near the inflorescences, but not observed to interact with the plant directly (Figures S4, S5).  We note this because it is unknown how the fleshy berries are dispersed, though we documented signs of frugivory (Figure S6). 
 
+&emsp;&emsp; Numerous invertebrates occupied or visited the flowers of _C. granulosus_ in this study. As found in previous studies, we observed ants [@stein_1992], mites [@naskrecki_1998], and dipterids [@weiss_1996] in or on the flowers of this species. Though *Anelosimus* spiders (Araneae) are known to build webs scaffolded by _Centropogon coccineus_ (Hook.) Regel ex B.D.Jacks. [@nentwig_1986], we observed unidentified Aranids inside of the floral tubes. We also recorded a larval lepidopteran inhabiting a flower (Figure S7), and an anthophilid (bee) collecting pollen from the anther scale (Figure S8).
 
-A fly stealing pollen (MVI_1124.AVI)
 
 &nbsp;
 
+_Flowering rate and pollinator exclusion_
+
+&emsp;&emsp; Hummingbird exclusion did not affect the total number of flowers produced ($p$=0.782, $t_{14}$=0.282, $d$=0.15). Caged inflorescences produced 11.2 ± 4.6 flowers whereas controls produced 12.2 ± 8.1 flowers (mean ± SE). We note that these numbers reflect flowering over the lifespan of the experiment (34 days); the upper limit of flower production for a single inflorescence has not been determined, though we counted 68 peduncle scars on an individual not included in this study (Figure S9). While _C. granulosus_ flowers generally open sequentially, temporal overlap is not uncommon (Figure S10).  
+
+&emsp;&emsp; Linear models accurately described flowering rate (Figure S11): the average adjusted $R^2$ was 0.949 ± 0.036, with marginal variation in $R^2_{adj}$ among inflorescences ($p$=0.117, $t_9$=1.73, $d$=1.15). Flowering rate (slope) varied among inflorescences ($p$=0.037, $t_9$=2.45, $d$=1.63), but not between treatments ($p$=0.273, $t_9$=1.17, $d$=0.78). The average rate was one anthesis event per 3.44 ± 0.12 days for control plants and 4.60 ± 0.07 days$^{-1}$ for pollinator-excluded plants. The highest flowering rate was documented in a control plant at 1.79 days$^{-1}$, nearly twice the rate of the next fastest individual (Figure S11). When the fast inflorescence is removed, the mean flowering rate for control plants is 4.12 ± 0.03 days$^{-1}$. The lowest flowering rates were 7.22 days$^{-1}$ and 7.06 days$^{-1}$, both in  pollinator-excluded plants. 
+
+&nbsp;
 _Floral development and pollinator exclusion_
 
-&nbsp;
+&emsp;&emsp; The flowers of _C. granulosus_ are protandrous: for the control plants, the male and female phases lasted 2.12 ± 0.23 and 2.73 ± 0.26 days, respectively (Figure S12).  Pollinator exclusion did not have a significant effect on the duration of the male phase ($p$=0.217, $t_{57}$=1.23, $d$=0.33) or female phase ($p$=0.784, $t_{57}$=0.27, $d$=0.07, Figure S12). 
 
-- abscission rate (linear?)
-- include nectar robber frequencies in table 2?
-- qualitative observations re: curvature development. We did a post-hoc analysis of curvature development using only the reference photographs taken for the characterization of life stages (see: Table XXX). 
-   
+&emsp;&emsp; We identified and described six discrete stages of floral development in _C. granulosus_ (Table S2). During the first stage (Stage A), the flowers are small buds, and have not yet developed curvature. In Stage B, the flowers elongate and form their characteristic hook shape &mdash; nearly all floral curvature is developed here. Stages C and D are defined by the male and female phases of anthesis, respectively. Following anthesis, the flowers wilt (Stage E), and if pollinated, form berries (Stage F, see Table S2 for further details of each stage). 
+
+&emsp;&emsp; Delimiting floral development into six stages generated a consensus developmental sequence (per treatment) that mapped at least 80% of the phenology data collected in this study. These six stages were used to compare differences in development between control and pollinator-excluded flowers (Figure 3). Between treatments, the rate of floral development is comparable from stages A (bud development) to C (anthesis). However, control flowers spend an additional 21 days developing berries, while all but two hummingbird-excluded flowers did not produce berries. Event history analysis showed that, following anthesis, daily survival probability decreased at similar rates for both treatments. However, at 13 days post-anthesis, hummingbird-excluded flowers wilt, while control plants continued to develop into a fruiting phase and produce berries (Figure 4). Before berry development, the survival curves are comparable ($p$=0.974, $\chi^2_1$=0.01, $Z$=0.03). When berry development is considered, the survival curves differ significantly ($p$=0.034, $\chi^2_1$=4.51, $Z$=2.07).
 
 
-&emsp;&emsp; Hummingbird-exclusion did not affect the number of flowers produced (df = XXX, $p$ = 0.91). Caged inflorescences produced 11.2 ± 4.6 flowers whereas controls produced 12.2 ± 8.1 flowers (mean ± standard deviation). We note that these numbers reflect flowering over the lifespan of the experiment; the upper limit of flower production for a single inflorescence is not known, though we counted up to 68 peduncle scars on an individual not included in this study (Figure S3). While _C. granulosus_ flowers generally open sequentially, temporal overlap is not uncommon (Figure XXX). However, the average number of flowers open on pollinator-excluded individuals (1.58 ± 1.14) was greater than the controls (0.84 ± 1.22, $p$ = 0.0003, $g$ = 0.62). **NEED RANDOM EFFECT FOR INDIVIDUALS**
+```{r figure3, echo=FALSE, fig.cap="Figure 3. Developmental trajectories for the flowers of *C. granulosus*, and effects of pollinator exclusion. The eight stages labeled on the x-axis are described in Table S2. The y-axis represents the number of days required to reach each stage.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_3.tif"))
+```
 
-&emsp;&emsp; Linear models accurately described flowering rate (Figure XXX): the mean and standard variation adjusted $R^2$ was 0.934 ± 0.047, with minimal variation in $R^2$ between individuals (df = XXX, $p$ = 0.301. Flowering rate did vary between individuals (df = XXX, $p$ = 0.037), but not between treatments (df = XXX, $p$ = 0.267). The flowers of _C. granulosus_ are dichogamous, and pollinator exclusion did not affect the onset or duration of either phases ($t$ = 1.3, $p$ = 0.181, Figure XXX). 
+\newpage
+```{r figure4, echo=FALSE, fig.cap="Figure 4. Post-anthesis survival analysis of *C. granulosus* flowers, and effects of pollinator-exclusion. Shaded regions are 95% confidence intervals.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_4.tif"))
+```
 
-&emsp;&emsp; We identified and described four discrete stages of floral development in _C. granulosus_ (Table 1). Delimiting floral development into four stages generated a consensus developmental sequence that mapped at least 85% of the sequence data collected in this study. These four stages were used to compare differences in development between control and pollinator-excluded flowers. From the floral phenology data we estimated consensus developmental sequences for each treatment (Figure 3). Between treatments floral development is comparable from stages 1 (bud development) to 4 (anthesis). However, control flowers spend an additional 18 days developing berries, while hummingbird-excluded flowers did not produce berries (Figure 3). Event history analysis showed that, following anthesis, daily survival probability decreased at similar rates. However, at 13 days post-anthesis, hummingbird-excluded flowers abscise, while control plants continued to produce berries (Figure 4). Overall, the survival curves differed significantly ($\chi^2$ = 4.5, $p$ = 0.0336).
+
 
 \newpage
 
-
-
-
 #### Discussion 
-
-The elevational distribution of putatively Sicklebill-pollinated _Heliconia_ and eucentropoginids is largely congruent. Cite Merkord for BTS distributions and compare to upper Centropogon dist. 
-
 
 _Buff-tailed Sicklebill is a pollinator of_ C. granulosus
 
-&emsp;&emsp; In this study we photo-documented Buff-tailed Sicklebill visitation to _C. granulosus_, and demonstrated that hummingbird visitation is required for berry development. We interpret the inability of hummingbird-excluded flowers to produce berries as owing to a lack of pollination. 
+In this study we photo-documented Buff-tailed Sicklebill visitation to _C. granulosus_, and demonstrated that hummingbird visitation is required for berry development. We interpret the inability of hummingbird-excluded flowers to produce berries as due to a lack of pollination. 
 
-&emsp;&emsp; _Centropogon_ pollen collected from White-tipped Sicklebill (*Eutoxeres aquila*) has been identified in previous studies [@maglianesi_2015], including _C. granulosus_ [@morrison_2020]. And while _Centropogon_ pollen has been identified from Buff-tailed Sicklebills from this study site [@dyck-chan_2020], species-level pollen identification for _Centropogon_ remains difficult. Confirmation of _C. granulosus_ pollen on Buff-tailed Sicklebill (*E. condamini*) would help to bolster the evidence presented here. 
+&emsp;&emsp; Eucentropogonid pollen collected from White-tipped Sicklebill (*Eutoxeres aquila*) has been identified in previous studies [@maglianesi_2015], including _C. granulosus_ [@morrison_2020]. And while _Centropogon_ pollen has been identified from Buff-tailed Sicklebills from this study site [@dyck-chan_2020], species-level pollen identification for this clade remains difficult. Confirmation of eucentropogonid pollen on Buff-tailed Sicklebill (*E. condamini*) would help to bolster the evidence presented here. 
+
+&emsp;&emsp; During visitation, the face of _E. condamini_ is inserted into the corolla tube so that the crown and throat are covered by the petal lobes. This is facilitated by the exceptionally inflated corolla opening characteristic of the eucentropogonids [@lagomarsino_2017]. While narrow corolla apertures are thought to promote specialization [@temeles_2002], the evolution of curvature might relax selection for corolla width. Conversely, because _E. condamini_ tilts its head backwards during bill insertion, it may not be able to see the corolla opening; thus, a narrow corolla width could negatively affect pollination if the barriers to accessing nectar are too high [@ricoguevara_2021].
+
+_Perching versus Hovering (natural history)_
+
+In contrast to previous accounts of Sicklebill visitation to _Centropogon_ [@stiles_1985; @stein_1987], we observed hovering in addition to perching.  While floral orientation in some hummingbird-pollinated plants may have evolved to exclude non-hovering visitors [@colwell_2021], hovering is one of the most energetically expensive modes of locomotion [@suarez_2002; doug] and is avoided when perches are available [@westerkamp_1990]. Recent work has found that short-billed hummingbird species have repeatedly evolved claws that improve their ability to perch [@colwell_2021]. Conversely, long-billed species tend to hover to feed, supporting the idea that long (and sometimes curved) tubular flowers evolve in response to selection for pollinator specialization [reviewed in @boehm_2021]. 
+
+&emsp;&emsp; Foraging mode also appears to correlate with flight ability, whereby trapliners are predicted to have smaller flight muscles and are less maneuverable than territorial hummingbirds [@sargent_2021]. Hover pollination of _C. granulosus_ may then present an exceptional challenge for _Eutoxeres_; these hummingbirds have large feet presumably adapted for using the floral bracts of _Heliconia_ as a perch while feeding [@feinsinger_1978; @colwell_2021]. This relative difficulty in hovering might further contribute to selection for increased corolla width in eucentropogonids (discussed above). 
+
+&emsp;&emsp; We speculate that the inflorescences of _C. granulosus_ are lignified primarily to support and orient flowers, and are only opportunistically used by Sicklebills as perches. This is because open flowers are, on the majority, oriented to face away from the stem on long peduncles (Figure 1). This is in contrast to Sicklebill visits to _Heliconia_ made at the same study site: flowers are oriented so that the opening is aligned with the perch (i.e. floral bract, Figure S13). We note that the nectar robber *Schistes geoffroyi* exclusively hovers when visiting _C. granulosus_, and makes twice as many daily visits as _E. condamini_. For these reasons, we expect *S. geoffroyi* to exhibit traveling exploitation at a smaller spatial scale than _Eutoxeres_, whereby a smaller number of scattered plants are visited more frequently, but not continuously defended as part of a static territory [@sargent_2021]. It should also be noted that strongly curved bills are a feature of nectivorous African sunbirds (FAMILY) which perch (often on thickened peduncles) to feed [2020 paper on experimental perching].
+
+
 
 &nbsp;
 
 _Steady State Flowering and Traplining_
 
-&emsp;&emsp; _C. granulosus_ exhibits a linear flowering rate befitting the 'steady state' ecotype described by Gentry [-@gentry_1974]. It is one of several phenological modes that are thought to have evolved via competition for pollinators, and represents an axis of niche partitioning that contributes to tropical plant diversity [@gentry_1974; @kessler_2020]. Indeed, most hummingbird species exhibit foraging behaviour that is adapted either to steady state or 'cornucopia' flowering [sensu @gentry_1974], with few species able or willing to visit plants of both types [@kessler_2020]. 
+_C. granulosus_ exhibits a linear flowering rate befitting the 'steady state' phenological type described by Gentry [-@gentry_1974] as "..[the production of] a few flowers a day over an extended period of time (usually a month or more)". It is one of several phenological modes that are thought to have evolved via competition for pollinators, and represents an axis of niche partitioning that contributes to tropical plant diversity [@gentry_1974; @kessler_2020]. Indeed, most hummingbird species exhibit foraging behaviour that is adapted either to steady state or 'cornucopia' flowering [*sensu* @gentry_1974], with few species able or willing to visit plants of both types [@kessler_2020]. However, beyond qualitative descriptors, there is a need for a quantitative framework to better define and classify phenological flowering types. For example, quantifying flowering rates of centropogonids could allow robust statistical classifications of phenological flowering types. This would help to move the field towards understanding the evolution of phenological modes as mechanisms of divergence. 
 
-&emsp;&emsp; The designation of 'steady state' implies a general mode of flowering, however the nuances of this strategy are not well known [XXX]. We found that several aspects of flowering were not affected by pollinator exclusion: the total number of flowers produced, the rate of flowering, and duration of the male/female phases of anthesis. Conversely, pollinator-excluded plants tended to have more flowers open than the controls. Whether this suite of traits is adaptive (i.e. they improve chances of pollination), or incidental is an unexplored aspect of the steady state ecotype.  
+&emsp;&emsp; The designation of 'steady state' implies a general mode of flowering, however the nuances of this strategy have rarely been considered in the context of dichogamy. In _C. granulosus_, there is a degree of coordination in the anthesis rate and the male-female transition rate. As a new flower opens, the initial male phase lasts 2.12 days. As the flowering rate is 3.44 days$^{-1}$, there is a small but potentially effective window of 1.32 days where the female phase is protected from receiving pollen from a flower of the same inflorescence. Given the visitation frequency of _E. condamini_ (1-2 per day), these temporal patterns might promote outcrossing while minimizing the risk of a pollinator visit without open flowers. 
 
-&emsp;&emsp; Sicklebills were not marked in order to distinguish individuals, so our ability to comment on individual behaviour is limited. However, based on population estimates of other Hermit hummingbirds, we assume that the local _E. condamini_ population is on the order of XXX. Considering the above, the camera trap records support the notion that Buff-tailed Sicklebill, like other Hermits, is a trapliner [sensu @janzen_1971]. We make this designation based on the observations that 1) these hummingbirds have not been recorded defending static territories, and 2) individual food plants are visited 1-2 times per day for brief (seconds) periods of foraging or inspection. 
+&emsp;&emsp; We found that several aspects of flowering were not affected by pollinator exclusion: the total number of flowers produced, the duration of the female phase, and the rate of flowering. Of the latter, we note that one control plant exhibited an accelerated flowering rate (Figure S11) at twice the magnitude of the average. Whether this observation is incidental or indicates the potential for adaptive plasticity of flowering rates is an interesting and unexplored aspect of the steady state flowering type. We also observe that the male phase shortens by ~25% in response to pollinator exclusion. This is in contrast to *Centropogon talamancensis* Wilbur and *Centropogon solanifolius* Benth. studied in Costa Rica, where experimental pollen removal shortened the male phase [@koptur_1990; @weiss_1996]. In their study of proandry in  *Campanula americana* L., Evanhoe and Galloway [@evanhoe_2002] observed a ~20 hour delay between pollen removal and the onset of the female phase: they hypothesized that the delay aligns the female phase to coincide with daily peaks in pollinator activity. Thus, pollinator-excluded plants in this study might be reconsidered as "controls" whereby plants visited by *Eutoxeres* have modified (delayed) onset of the female phase in order to coincide with visitation patterns inherent in traplining behaviour. Of course, very little is yet known of traplining in hummingbirds, and 
 
-&emsp;&emsp; Traplining is widely viewed as an adaptation to steady state flowering [@kessler_2020].  Hummingbird traplines can reach several kilometers in length [@volpe_2014] and can increase pollen transfer between plants separated by similar distances [@torres_2019]. While the foraging behaviour of trapliners suggests resource specialization [sensu @XXX], the traplines of _Eutoxeres_ and the consequent effects on _Centropogon_ diversification are avenues yet explored. As trapline architecture is further elucidated, a synthesis of the morphological (e.g. bill shape), behavioural (e.g. foraging), and physiological (e.g. metabolism) traits associated with specialization in hummingbirds would provide an exciting extension of the pollination syndrome concept &mdash; we encourage a continued focus on pollination ecology for this reason. 
+
+The floral longevity model of Shoen and Ashman [@-shoen_1995] predicts that the male phase should shorten when fitness accrual (i.e. pollen removal) is high. Further work will be needed to determine if the patterns observed here are the result of strong selection for the onset of the female phase, e.g. for a plant not receiving po
+
+Because  further work with a greater sample size will be needed to 
+
+Indeed, [@shoen_1995]
+
+
+
+<!-- We found that several aspects of flowering were not affected by pollinator exclusion: the total number of flowers produced, the rate of flowering, and duration of the male/female phases of anthesis. Whether this suite of traits is adaptive (i.e. they improve chances of pollination), or incidental is an unexplored aspect of the steady state flowering type.   -->
+
+&emsp;&emsp; Sicklebills were not marked and our ability to comment on individual behaviour is limited. Nonetheless, the visitation rates support the notion that Buff-tailed Sicklebill is a trapliner. More specifically, this species appears to exhibit traveling exploitation [*sensu* @sargent_2021], i.e. individuals travel long distances without defending resources, and competition for floral nectar is indirect. We make this designation based on the observations that (1) these hummingbirds have not been recorded defending static territories, and (2) individual food plants are visited 1-2 times per day for brief (seconds) periods of foraging or inspection. This is in contrast to the multiple visits per day made by the nectar robber *Schistes geoffroyi*. Broadly, the behaviours exhibited by *E. condamini* are in accordance with the foraging behaviours documented for White-tipped Sicklebill in Costa Rica [@stiles_1985]. However, the fine-scale daily movements of *Eutoxeres* (and Hermits generally) have not yet been studied &mdash; at present, interspecific comparisons are limited by a lack of data. 
+
+
+
+&emsp;&emsp; Traplining is widely viewed as an adaptation to steady state flowering [@kessler_2020].  Hummingbird traplines can reach several kilometers in length [@volpe_2014] and can increase pollen transfer between plants at these scales [@torres_2019]. While the foraging behaviour of trapliners suggests resource specialization, the traplines of _Eutoxeres_ and the consequent effects on _Centropogon_ reproduction are avenues not yet explored. As trapline architecture is further elucidated, a synthesis of the morphological (e.g. bill shape), behavioural (e.g. foraging), and physiological (e.g. flight mechanics) traits associated with specialization in hummingbirds would provide an exciting extension of the pollination syndrome concept &mdash; we encourage a continued focus on field-based pollination ecology for this reason. 
 
 
 &nbsp;
-
-_Perching versus Hovering_
-
-&emsp;&emsp; In contrast to previous accounts of Sicklebill visitation to _Centropogon_ [@stein_1987], we observed hovering in addition to perching. As with other hummingbirds, they are adept fliers and appear to probe flowers with ease (Appendix SXXX). While floral orientation in hummingbird-pollinated plants may have evolved to exclude non-hovering visitors [@colwell_2021], hovering is energetically expensive for hummingbirds and likely to be avoided when possible [@altschulerXXX]. Recent work has found that short-billed hummingbird species have repeatedly evolved claws that improve their ability to perch [@colwell_2021]. Conversely, long-billed species tend to hover to feed, supporting the idea that long (and sometimes curved) tubular flowers evolve in response to selection for pollinator specialization [reviewed in @boehm_2021_a]. 
-
-&emsp;&emsp; We speculate that the inflorescences of _C. granulosus_ are lignified primarily to support and orient flowers, and are only opportunistically used by Sicklebills as perches. This is because open flowers are, on the majority, oriented to face away from the stem on long peduncles (Figure SXXX). This is in contrast to Sicklebill visits to _Heliconia_ made at the same study site: flowers are oriented so that the opening is on the same plane as the perch (the floral bract, Figure SXX). 
 
 
 
@@ -228,103 +281,13 @@ _Perching versus Hovering_
 
 _Concluding Remarks_
 
-&nbsp;
+The pollination syndrome concept has been remarkably successful at using limited *a priori * information to infer the pollination mode of understudied taxa [@dellinger_2020]. In the centropogonids, coding pollination mode for a clade with incomplete field records, and hundreds of species, has necessitated the use of the pollination syndrome framework. Consequently, macroevolutionary models of floral trait evolution can generate informed estimates of plant-pollinator relationships for rare or difficult-to-study species. Focused efforts on field work can then serve as an invaluable means to validate these models and the pollination syndrome concept that underlies its predictions. 
 
-
-
-&emsp;&emsp; Confirming Sicklebill visitation in _C. granulosus_ raises myriad questions. For instance, given that the eucentropgonid clade is so diverse and widespread in southeastern Peru (Figure 1), is _Eutoxeres_ the pollinator of all of these species? Furthermore, what mechanisms, if any, prevent interspecific pollen transfer within this clade? Through the effort of making pollinator observations, we were surprised to learn that another hummingbird (*Schistes geoffroyi*) is a nectar robber of _C. granulosus_ [described in @boehm_2018_b]. An entire literature on the competitive interactions for nectar and effects on the focal plant offer many avenues for future research [XXX]. For example, 
-
-While the pollination syndrome concept is well-supported, empirical observations remain foundational to understanding the dynamics of plants-pollinator evolution [@dellinger_2020]. >>maybe insert the big Qs in this field?
-
-At the heart of this study, and the many excellent investigations into this system, is the question "why and what are the mechanisms that select for and maintain extreme curvature in these plant and hummingbird clades?" and "what is the role (if any) of curvature in the rapid diversification of the eucentropogonids?" 
+&emsp;&emsp; Confirming Sicklebill visitation in _C. granulosus_ raises myriad questions. For instance, given that eucentropogonids are so diverse and widespread in southeastern Peru, is _E. condamini_ the pollinator of all of these species? Furthermore, what morphological and phenological traits, if any, prevent interspecific pollen transfer within the eucentropogonids? Through making observations of floral visitors, we were surprised to learn that another hummingbird (*Schistes geoffroyi*) is a nectar robber of _C. granulosus_ exhibiting traveling exploitation. If and how _Eutoxeres_ interacts with competitors, and the consequences for pollination in _Centropogon_ offers a promising avenue for future research.
 
 
 
 \newpage
-
-
-# ```{r figure1, echo=FALSE, fig.cap="Figure 1. Distribution of _Centropogon_ and _Heliconia_ along the Manú Gradient, southeastern Peru. Data aquisition and analysis described in the Supplementary Materials.", out.width = '100%'}
-# knitr::include_graphics(here("Figures/Figure_1.jpg"))
-# ```
-# 
-# \newpage
-# 
-# ```{r figure2, echo=FALSE, fig.cap="Figure 2. A: Geographic context for study site in southeastern Peru. Coordinates are in decimal degrees. B: Montane cloud forests of the eastern Andes (San Pedro, Peru). C: Trait-matching in *E. condamini* and *C. granulosus*. D: Camera trap documentation of *E. condamini* pollinating *C. granulosus*.", out.width = '100%'}
-# knitr::include_graphics(here("Figures/Figure_2.tif"))
-# ```
-# 
-# \newpage
-# 
-# ```{r figure3, echo=FALSE, fig.cap="Figure 3. Effects of pollinator exclusion on floral development. Developmental stages are described in Table 1.", out.width = '100%'}
-# knitr::include_graphics(here("Figures/Figure_3.jpg"))
-# ```
-# 
-# \newpage
-# 
-# ```{r figure4, echo=FALSE, fig.cap="Figure 4. Effects of pollinator exclusion on survival probability.", out.width = '100%'}
-# knitr::include_graphics(here("Figures/Figure_4.jpg"))
-# ```
-# 
-# \newpage
-# ```{r figure5, echo=FALSE, fig.cap="Figure 5. Flowering rate in _C. granulosus_. The $x$-axis represents the number of days elapsed since the first flower opened. The $y$-axis counts the cumulative number of flowers opened since $t$=0", not the number of flowers open simultaneously.", out.width = '100%'}
-# knitr::include_graphics(here("Figures/Figure_4.jpg"))
-# ```
-# 
-# \newpage
-# ```{r include=FALSE} 
-# knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
-# 
-# ```
-
-# ```{r include = FALSE}
-# library(googlesheets4)
-# 
-# # prevent using auto-token
-# gs4_deauth()
-# 
-# # sign in 
-# gs4_auth(email = 'mannfredboehm@gmail.com', 
-#          scopes = "https://www.googleapis.com/auth/spreadsheets")
-# 
-# # my "app" info from https://console.cloud.google.com
-# google_app <- httr::oauth_app(
-#   appname = "mannys_cool_app",
-#   key = "1089626906814-9lggcl5o3m7oeaqr583bs23h8pkbdgl7.apps.googleusercontent.com",
-#   secret = "2uIBhIcqOC85xMx5EWkdQGHG"
-# )
-# 
-# # my API key
-# google_key <- gs4_api_key()
-# 
-# # configure access
-# gs4_auth_configure(app = google_app, api_key = google_key)
-# 
-# ```
-# 
-# 
-# ```{r table1}
-# 
-# library(googlesheets4)
-# 
-# table1 <- read_sheet('1VzmXOzNcNKxmyFNfu_fBt6eqI4MsqAt3XuXTVmFJhlo', col_names=TRUE)
-# 
-# knitr::kable(table1, caption = 'Table 1: Stages of floral development in unmanipulated _Centropogon granulosus_. Stage duration is reported from the consensus sequence estimation (see: Methods). Representative photos for each stage are included in Figure 3.')
-# 
-# ```
-# 
-# \newpage
-# ```{r table2}
-# 
-# library(googlesheets4)
-# 
-# table2 <- read_sheet('1H5q2QBCAGkAfGbFFi2p1YH_5dOJTYvm-61Rotayau1A', col_names=TRUE)
-# 
-# knitr::kable(table2, caption = 'Table 2: Camera trap records of Buff-tailed Sicklebill (*E. condamini*) visitation at _C. granulosus_.')
-# 
-# ```
-
-\newpage
-
 # References
 
   
