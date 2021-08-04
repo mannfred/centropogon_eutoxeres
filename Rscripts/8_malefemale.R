@@ -81,10 +81,34 @@ emmeans(m5, 'treatment', type='response')
 # estimate means for female phase
 emmeans(m6, 'treatment', type='response')
 
+# -----------------------------------------------------
+# how much data was discarded to take th GLMM approach?
+
+#bcdata n=40
+#ctdata n=80
 
 
+bcdata2 <- 
+  read.csv(here('Data/Bird_cage_compiled.csv')) %>%
+  as_tibble() %>% 
+  group_by(indiv_flower) %>% 
+  filter(any(stage == 5) & any(stage == 6)) %>% 
+  filter(stage == 5 | stage == 6) %>% 
+  count(indiv_flower, stage) %>%  # count the instances of stage 5 and 6 per individual
+  mutate(treatment = 'pollinator_excluded')
 
+ctdata2 <- 
+  read.csv(here('Data/No_treat_compiled.csv')) %>%
+  as_tibble() %>% 
+  group_by(indiv_flower) %>% 
+  filter(any(stage == 5) & any(stage == 6)) %>% 
+  filter(stage == 5 | stage == 6) %>% 
+  count(indiv_flower, stage)  %>% # count the instances of stage 5 and 6 per individual
+  mutate(treatment = 'control')
 
+#bcdata n=40, bcdata2 n=52
+#ctdata n=80, ctdata2 n=100
 
-
+# pollinator excluded: discarded 23% of data
+# control:             discarded 20% of data
 

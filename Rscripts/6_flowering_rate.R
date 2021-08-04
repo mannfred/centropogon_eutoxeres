@@ -27,14 +27,6 @@ bc_data <-
          flower_number = row_number()) %>% # number of flowers per inflorescence
   filter(indiv_ID != 4) # remove individual 4 because there's only one data point
 
-# plot
-mytheme <-
-  theme_bw() +
-  theme(
-    panel.border = element_blank(), 
-    panel.grid.major = element_blank(),
-    panel.grid.minor = element_blank(), 
-    axis.line = element_line(colour = "black"))
 
 ggplot(data = bc_data, aes(x = as.numeric(elapsed_days), y = flower_number, color = factor(indiv_ID), group = indiv_ID)) +
   geom_point(size = 4) +
@@ -77,6 +69,7 @@ mycolours <- c(rep("#009E73", 33), rep("#E69F00", 43))
 ggplot(data = alldata, aes(x = as.numeric(elapsed_days), y = flower_number, group = indiv_treatment)) +
   geom_point(size = 4, color = mycolours) +
   stat_smooth(method = 'lm', fullrange =TRUE, se = FALSE, aes(color = treatment)) +
+  scale_colour_manual(values=c("#E69F00", "#009E73")) +
   mytheme
 
 # ---------------------------------------------------------
