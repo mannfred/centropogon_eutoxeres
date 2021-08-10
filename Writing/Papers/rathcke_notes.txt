@@ -1,0 +1,11 @@
+...we use the word phenology in its strict sense of seasonal timing within years; and we address variation among years only when it pertains to the discussion of within-year patterns
+
+...the specific methodologies for collecting and analyzing phenological data (151, 194, 201).
+
+Many studies show seasonal correlations between pollinator populations and flower- ing (175, 217, 253). (also Stiles 1985 w E. aquila)
+
+For example, migration times of hummingbirds, which are correlated with the flowering times of humming- bird-pollinated plants, may be seasonally restricted by other factors (36, 92, 274, 276).
+
+Asynchrony or divergence of flowering times among species could arise in two ways. First, interspecific competition for pollinator visits could favor divergence because reduced visitation can decrease pollen donation and seed set. No strong evidence supports this as a primary cause of divergence (208, 275). Second, interspecific pollen transfer could favor divergence because this transfer could reduce pollen donation, reduce seed set, and produce less fit hybrids. Two studies provide strong evidence that divergence in flowering times has been caused by interspecific pollen transfer...
+
+**phenological ecotypes are defined by both duration (Gentry 1974, Rathcke 1985) and rate (Boehm 2021).

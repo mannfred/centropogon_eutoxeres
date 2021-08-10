@@ -1,5 +1,6 @@
 library(broom)
 library(here)
+library(lin.eval)
 library(lubridate)
 library(tidyverse)
 
@@ -124,3 +125,50 @@ summary(lm(slope ~ unique_ID, data = allmodels))
 
 # does flowering rate vary between treatments?
 summary(lm(slope ~ treatment, data = allmodels))
+
+
+
+# --------------------------------
+# evaluate linearity
+# https://meridian.allenpress.com/aplm/article/128/1/44/458519/Evaluation-of-Linearity-in-the-Clinical-Laboratory
+
+# pollinator excluded
+
+# indiv 1
+poly_eval(bc_data$flower_number[1:5], as.numeric(bc_data$elapsed_days[1:5]))
+
+# indiv 2
+poly_eval(bc_data$flower_number[6:12], as.numeric(bc_data$elapsed_days[6:12]))
+
+# indiv 3
+poly_eval(bc_data$flower_number[13:17], as.numeric(bc_data$elapsed_days[13:17]))
+
+# indiv 4
+poly_eval(bc_data$flower_number[18:25], as.numeric(bc_data$elapsed_days[18:25]))
+
+# indiv 5 (linear if last data point is omitted to account for slowing)
+poly_eval(bc_data$flower_number[26:32], as.numeric(bc_data$elapsed_days[26:32]))
+
+
+
+
+# control plants
+
+# indiv 1
+poly_eval(ct_data$flower_number[1:8], as.numeric(ct_data$elapsed_days[1:8]))
+
+# indiv 2 (needs more data to evaluate linearity)
+poly_eval(ct_data$flower_number[9:12], as.numeric(ct_data$elapsed_days[9:12]))
+
+# indiv 3
+poly_eval(ct_data$flower_number[13:20], as.numeric(ct_data$elapsed_days[13:20]))
+
+# indiv 4
+poly_eval(ct_data$flower_number[21:25], as.numeric(ct_data$elapsed_days[21:25]))
+
+# indiv 5
+poly_eval(ct_data$flower_number[26:32], as.numeric(ct_data$elapsed_days[26:32]))
+
+# indiv 6
+poly_eval(ct_data$flower_number[33:43], as.numeric(ct_data$elapsed_days[33:43]))
+     
