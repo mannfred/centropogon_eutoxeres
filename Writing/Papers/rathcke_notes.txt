@@ -9,3 +9,8 @@ For example, migration times of hummingbirds, which are correlated with the flow
 Asynchrony or divergence of flowering times among species could arise in two ways. First, interspecific competition for pollinator visits could favor divergence because reduced visitation can decrease pollen donation and seed set. No strong evidence supports this as a primary cause of divergence (208, 275). Second, interspecific pollen transfer could favor divergence because this transfer could reduce pollen donation, reduce seed set, and produce less fit hybrids. Two studies provide strong evidence that divergence in flowering times has been caused by interspecific pollen transfer...
 
 **phenological ecotypes are defined by both duration (Gentry 1974, Rathcke 1985) and rate (Boehm 2021).
+
+INTRO: Needs discussion of male/female split in Campanulaceae. Why does it exist?
+
+61
+156

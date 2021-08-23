@@ -112,3 +112,19 @@ ctdata2 <-
 # pollinator excluded: discarded 23% of data
 # control:             discarded 20% of data
 
+
+# --------------------------------
+# is accelerated flowering in control indiv #9
+# driven by shortened male/female durations?
+
+# male phase
+s5data %>% 
+  filter(treatment == 'control') %>% 
+  group_by(indiv_id) %>% 
+  summarize(Mean = mean(n))
+
+# female phase
+s6data %>% 
+  filter(treatment == 'control') %>% 
+  group_by(indiv_id) %>% 
+  summarize(Mean = mean(n))

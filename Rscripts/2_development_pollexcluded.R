@@ -10,6 +10,8 @@ development_data_bc <-
   mutate(stage = as.character(stage))  # for replace() below
 
 # create AAStringSet 
+# note: 17 non-censored indiv wilted or produced berries,
+# 2 of them (11.7%) developed berries for ~18days before aborting
 bc_stringset <- 
   development_data_bc %>% 
   group_by(indiv_flower) %>% 

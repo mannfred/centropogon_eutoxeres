@@ -12,7 +12,7 @@ output:
    # pdf_document:
    #  latex_engine: xelatex
 bibliography: centropogon_biology.bib
-csl: cell.csl
+csl: amjbot.csl
 link-citations: true #'yes' for html, 'true' for pdfs
 linkcolor: blue
 urlcolor: blue
@@ -27,15 +27,13 @@ Note: All data and scripts used in this study have been deposited
 in the Dryad Digital Repository (https://...)
 
 
-\newpage
-#### Eutoxeres
 
 
 
 \newpage
 #### Phenological modeling 
 
-To model flowering phenology of _C. granulosus_, we fit the following linear model to the rate of anthesis and senescence for each inflorescence that produced at least five flowers ($n$ = 6 controls, $n$ = 5 pollinator excluded): 
+To model flowering phenology of _C. granulosus_, we fit the following linear model to the rate of anthesis and senescence for each inflorescence that produced at least five flowers ($n$ = 5 controls, $n$ = 5 pollinator excluded): 
 
 $$n_i = \beta_0 + \beta_1*days + \epsilon$$
 
@@ -46,11 +44,7 @@ $$n_i = \beta_0 + \beta_1*days + \epsilon$$
 $$n_{total} = \beta_0 + \beta_1*treatment + \epsilon$$
 &emsp;&emsp; Where $\beta_0$ is the intercept, $\beta_1$ is a coefficient, and $\epsilon$ is the residual error. 
 
-&emsp;&emsp; To test for differences in male/female phase duration between treatments, we fit a generalized mixed-effects model for each phase in `lme4` vXXX [XXX]:
 
-$$n = \beta_0 + \beta_1*treatment + U_i + \epsilon$$
-
-&emsp;&emsp; Where $n$ is the duration of the specified phase, $U_i$ is the individual specific random effect, and all other variables are as above. Cohen's standardized effects ($d$) were calculated from $t$ values and degrees of freedom using `effectsize` v.0.4.4 [@shacar_2020]. 
 
 
 
@@ -67,65 +61,58 @@ knitr::include_graphics(here("Figures/Figure_S1.tif"))
 ```
 
 \newpage
-```{r figureS2, echo=FALSE, fig.cap="Figure S2. Wire cages used to exclude avian visitors from accessing the nectaries of _C. granulosus_. Further details on the design can be found in Sun et al. [-@sun_2017].", out.width = '100%'}
-knitr::include_graphics(here("Figures/Figure_S2.jpg"))
+```{r figureS2, echo=FALSE, fig.cap="Figure S2. Trait matching in Buff-tailed Sicklebill and C. granulosus observed at the study site. Photo used with permission from J. Heavyside (UBC).", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S2.tif"))
+```
+
+\newpage
+```{r figureS3, echo=FALSE, fig.cap="Figure S3. Wire cages used to exclude avian visitors from accessing the nectaries of _C. granulosus_. Further details on the design can be found in Sun et al. [-@sun_2017].", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S3.jpg"))
 ```
 
 
 \newpage
-```{r figureS3, echo=FALSE, fig.cap="Figure S3. Still frames extracted from a video recording of _E. condamini_ pollinating _C. granulosus_. A: The hummingbird approaches and inspects an inflorescence without any open flowers. B: A second inflorescence with an open flower is approached. C: To insert its bill, _E. condamini_ hovers below the flower opening and tilts its head backwards. D: During feeding, its head is at eye-level with the corolla opening and the anther/stigma is in contact with the crown.", out.width = '100%'}
-knitr::include_graphics(here("Figures/Figure_S3.tif"))
+```{r figureS4, echo=FALSE, fig.cap="Figure S4. Still frames extracted from a video recording of _E. condamini_ pollinating _C. granulosus_. A: The hummingbird approaches and inspects an inflorescence without any open flowers. B: A second inflorescence with an open flower is approached. C: To insert its bill, _E. condamini_ hovers below the flower opening and tilts its head backwards. D: During feeding, its head is at eye-level with the corolla opening and the anther/stigma is in contact with the crown.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S4.tif"))
 ```
 
 \newpage
-```{r figureS4, echo=FALSE, fig.cap="Figure S4. A long-nosed bat (Glossophaginae) recorded near an inflorescence of _C. granulosus_ with several developing berries.", out.width = '100%'}
-knitr::include_graphics(here("Figures/Figure_S4.jpg"))
-```
-
-\newpage
-```{r figureS5, echo=FALSE, fig.cap="Figure S5. A murid (Muridae, bottom left)  recorded near an inflorescence of _C. granulosus_ (top left) with several developing berries.", out.width = '100%'}
+```{r figureS5, echo=FALSE, fig.cap="Figure S5. A long-nosed bat (Glossophaginae) recorded near an inflorescence of _C. granulosus_ with several developing berries.", out.width = '100%'}
 knitr::include_graphics(here("Figures/Figure_S5.jpg"))
 ```
 
 \newpage
-```{r figureS6, echo=FALSE, fig.cap="Figure S6. Evidence of frugivory of a _C. granulosus_ berry.", out.width = '100%'}
+```{r figureS6, echo=FALSE, fig.cap="Figure S6. A rodent (Muridae, bottom left) recorded near an inflorescence of _C. granulosus_ (top left) with several developing berries.", out.width = '100%'}
 knitr::include_graphics(here("Figures/Figure_S6.jpg"))
 ```
 
 \newpage
-```{r figureS7, echo=FALSE, fig.cap="Figure S7. Herbivory of a _C. granulosus_ flower by a larval lepidoptran.", out.width = '100%'}
+```{r figureS7, echo=FALSE, fig.cap="Figure S7. Signs of frugivory of a _C. granulosus_ berry.", out.width = '100%'}
 knitr::include_graphics(here("Figures/Figure_S7.jpg"))
 ```
 
 \newpage
-```{r figureS8, echo=FALSE, fig.cap="Figure S8. An anthophilid collecting pollen from an anther scale of _C. granulosus_.", out.width = '100%'}
-knitr::include_graphics(here("Figures/Figure_S8.png"))
+```{r figureS8, echo=FALSE, fig.cap="Figure S8. Herbivory of a _C. granulosus_ flower by a larval lepidoptran.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S8.jpg"))
 ```
 
 \newpage
-```{r figureS9, echo=FALSE, fig.cap="Figure S9. Inflorescence of _C. granulosus_ with a multitude of peduncle scars (red arrow) suggestive of an extended flowering peak.", out.width = '100%'}
-knitr::include_graphics(here("Figures/Figure_S9.tif"))
+```{r figureS9, echo=FALSE, fig.cap="Figure S9. A stingless bee (Meliponini) collecting pollen from an anther scale of _C. granulosus_.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S9.png"))
 ```
 
 \newpage
-```{r figureS10, echo=FALSE, fig.cap="Figure S10. Flowering rate in _C. granulosus_. The $x$-axis represents the number of days elapsed since the first flower opened. The $y$-axis counts the cumulative number of flowers opened since $t$=0, not the number of flowers open simultaneously.", out.width = '100%'}
+```{r figureS10, echo=FALSE, fig.cap="Figure S10. Inflorescence of _C. granulosus_ with a multitude of peduncle scars (red arrow) suggestive of an extended flowering peak.", out.width = '100%'}
 knitr::include_graphics(here("Figures/Figure_S10.tif"))
 ```
 
 \newpage
-```{r figureS11, echo=FALSE, fig.cap="Figure S11. Flowering rates in _C. granulosus_ are constant, and not affected by pollinator exclusion.", out.width = '100%'}
-knitr::include_graphics(here("Figures/Figure_S11.tif"))
+```{r figureS11, echo=FALSE, fig.cap="Figure S11. Buff-tailed Sicklebill visiting _Heliconia aemygdiana_ Burle-Marx, and using the floral bract as a perch during feeding.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S11.jpg"))
 ```
 
-\newpage
-```{r figureS12, echo=FALSE, fig.cap="Figure S12. The duration of male and female phases of flowering in _C. granulosus_ are not affected by pollinator exclusion.", out.width = '100%'}
-knitr::include_graphics(here("Figures/Figure_S12.tif"))
-```
 
-\newpage
-```{r figureS13, echo=FALSE, fig.cap="Figure S13. Buff-tailed Sicklebill visiting _Heliconia aemygdiana_ Burle-Marx, and using the floral bract as a perch during feeding.", out.width = '100%'}
-knitr::include_graphics(here("Figures/Figure_S13.jpg"))
-```
+
 
 
 

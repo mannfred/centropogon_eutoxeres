@@ -28,15 +28,6 @@ bc_data <-
   filter(indiv_ID != 4 & indiv_ID != 1) # remove individuals 1 and 4 because there's <3 data points
 
   
-# plot
-mytheme <-
-  theme_bw() +
-  theme(
-    panel.border = element_blank(), 
-    panel.grid.major = element_blank(),
-    panel.grid.minor = element_blank(), 
-    axis.line = element_line(colour = "black"))
-
 ggplot(data = bc_data, aes(x = as.numeric(elapsed_days), y = wilt_number, color = factor(indiv_ID), group = indiv_ID)) +
   geom_point(size = 4) +
   stat_smooth(method = 'lm', fullrange = TRUE, se = FALSE) +
@@ -60,7 +51,7 @@ ct_data <-
   arrange(min_date, .by_group = TRUE) %>% 
   mutate(elapsed_days = min_date - min(min_date), # days since first wilt event
          wilt_number = row_number()) %>% # number of wilt events per inflorescence
-  filter(indiv_ID != 2 & indiv_ID != 4 & indiv_ID != 6 & indiv_ID != 7) # remove individuals 2,4,6,7 because they have <5 data points
+  filter(indiv_ID != 2 & indiv_ID != 4 & indiv_ID != 6 & indiv_ID != 7 & indiv_ID != 10) # remove individuals 2,4,6,7 because they have <5 data points
 
 
 ggplot(data = ct_data, aes(x = as.numeric(elapsed_days), y = wilt_number, color = factor(indiv_ID), group = indiv_ID)) +
