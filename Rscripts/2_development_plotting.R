@@ -38,31 +38,4 @@ ggplot(data=med_data, aes(x=cummed, y=stage, colour=treatment)) +
 sqrt((24.231619 - 19.761254)^2 + (7.195999 - 4.419347)^2) # 5.262505 = 95% CI
 
 
-# --------------------------------------------------
-# putting time on x axis and setting stage A as day 0
 
-# set median estimates to start at 0
-adj_cummed_bc <-
-  med_data %>% 
-  filter(treatment == 'pollinator_excluded') %>% 
-  mutate(adj_cummed = cummed - est[1]) 
-  
-adj_cummed_ct <-
-  med_data %>% 
-  filter(treatment == 'controls') %>% 
-  mutate(adj_cummed = cummed - est[1]) 
-
-med_data$adj_cummed <- c(adj_cummed_bc[,11], adj_cummed_ct[,11])  
-
-# set 95CIs to start at 0
-med_data$adj_lcl  <- c(med_data$lclprop[1:8] - med_data$cummed[1], med_data$lclprop[9:16] - med_data$cummed[9])
-med_data$adj_ucl  <- c(med_data$uclprop[1:8] - med_data$cummed[1], med_data$uclprop[9:16] - med_data$cummed[9])
-
-
-
-
-ggplot(data=med_data, aes(x=adj_cummed, y=stage, colour=treatment)) +
-  geom_point(position=position_dodge(width = 0.5), size=4) + 
-  geom_errorbar(aes(xmin=adj_lcl, xmax=adj_ucl), size=1, position=position_dodge(width = 0.5)) +
-  scale_colour_manual(values=c("#E69F00", "#009E73")) +
-  mytheme

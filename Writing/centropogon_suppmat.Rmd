@@ -111,6 +111,10 @@ knitr::include_graphics(here("Figures/Figure_S10.tif"))
 knitr::include_graphics(here("Figures/Figure_S11.jpg"))
 ```
 
+\newpage
+```{r figureS12, echo=FALSE, fig.cap="Figure S12. Recorded visits to C. granulosus by Buff-tailed Sicklebill. Visit data is compiled from six C. granulosus individuals (see: Table S3). 'AM' is defined as 12:00am-11:59am and 'PM' is 12:00pm-11:59pm'.", out.width = '100%'}
+knitr::include_graphics(here("Figures/Figure_S12.tif"))
+```
 
 
 
