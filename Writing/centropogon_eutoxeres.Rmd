@@ -5,13 +5,13 @@ date: ""
 output: 
   word_document:
     fig_caption: yes
-    reference_docx: centropogon_biology_reference.docx
+    reference_docx: centropogon_eutoxeres_reference.docx
   # html_document:
   #   number_sections: no
   #   theme: flatly
    # pdf_document:
    #  latex_engine: xelatex
-bibliography: centropogon_biology.bib
+bibliography: centropogon_eutoxeres.bib
 csl: amjbot.csl
 link-citations: true #'yes' for html, 'true' for pdfs
 linkcolor: blue
