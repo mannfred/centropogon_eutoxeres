@@ -20,7 +20,9 @@ ggplot(data=med_data, aes(x=stage, y=cummed, colour=treatment)) +
 xmin_bc <- med_data$cummed[1:8] - med_data$cummed[1]
 xmin_ct <- med_data$cummed[9:16] - med_data$cummed[9]
 
-med_data$xmin <- c(0, med_data$cummed[1:7], 0, med_data$cummed[9:15])
+# lower boundaries for duration bars
+med_data$xmin <- c(0, med_data$cummed[1:6], NA, #poll exc
+                   0, med_data$cummed[9:15])    #control
 
 
 ggplot(data=med_data, aes(x=cummed, y=stage, colour=treatment)) +
@@ -28,7 +30,7 @@ ggplot(data=med_data, aes(x=cummed, y=stage, colour=treatment)) +
   geom_errorbar(aes(xmin=lclprop, xmax=uclprop), size=1.5, width=0.35, position=position_dodge(width = 0.63)) +
   scale_fill_manual(values=c("#E69F00", "#009E73")) +
   scale_colour_manual(values=c("#f0c566", "#66c4ab")) + #tints from https://www.color-hex.com/
-  scale_x_continuous(limits=c(0, 90)) +
+  scale_x_continuous(breaks = seq(0, 90, by = 10)) +
   xlab("elapsed days") +
   mytheme
 

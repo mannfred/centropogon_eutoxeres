@@ -1,5 +1,5 @@
 ---
-title: "Supplementary Materials for: Floral development in an Andean bellflower (*Centropogon granulosus*, Campanulaceae) and pollination by Buff-tailed Sicklebill (*Eutoxeres condamini*)"
+title: "Supplementary Materials for: Floral phenology of an Andean bellflower (*Centropogon granulosus*, Lobelioideae) and pollination by Buff-tailed Sicklebill (*Eutoxeres condamini*)"
 author: 
 date: ""
 output: 
