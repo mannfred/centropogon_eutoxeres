@@ -31,6 +31,11 @@ in the Dryad Digital Repository (https://...)
 
 
 \newpage
+#### Visit duration
+
+To estimate the duration of *E. condamini* visits, we considered that the camera traps took photos in sets of five, lasting less than 3 seconds. To make a conservative estimate, we assume the five photos take 3 seconds. For any 5-photo set in which *E condamini* appears, we assume 3 seconds visitation. For example, during visitation, if *E. condamini* appears in two 5-photo sets, we assume a 2 \times 3 second (= 6 second) visit, even if the hummingbird appeared in only a subset of the 10 photos. 
+
+
 #### Phenological modeling 
 
 To model flowering phenology of _C. granulosus_, we fit the following linear model to the rate of anthesis and senescence for each inflorescence that produced at least five flowers ($n$ = 5 controls, $n$ = 5 pollinator excluded): 
