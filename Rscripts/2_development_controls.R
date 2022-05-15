@@ -6,7 +6,7 @@ library(tidyverse)
 
 # import control data
 development_data_ct <- 
-  read.csv(here('Data/No_treat_compiled.csv')) %>% 
+  read.csv(here('Data/derived_data/No_treat_compiled.csv')) %>% 
   mutate(stage = as.character(stage))  # for replace() below
 
 # create AAStringSet 

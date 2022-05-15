@@ -17,7 +17,7 @@ library(tidyverse)
 # see: 'Clustered survival data' and
 # see: https://stats.stackexchange.com/questions/199744/using-survival-analysis-with-multiple-events
 
-mydata <- read.csv(here('Data/means_melted.csv'), header = TRUE)
+mydata <- read.csv(here('Data/derived_data/means_melted.csv'), header = TRUE)
 
 
 as.factor(mydata$group)
@@ -38,8 +38,8 @@ ggplot(data = mydata, aes(x=stage, y=days)) +
 # --------------------------------------------------
 # does pollinator exclusion affect flower production?
 
-control <- read.csv(file = here('Data/No_treat_compiled.csv'))
-treatment <- read.csv(file = here('Data/Bird_cage_compiled.csv'))
+control <- read.csv(file = here('Data/derived_data/No_treat_compiled.csv'))
+treatment <- read.csv(file = here('Data/derived_data/Bird_cage_compiled.csv'))
 unique(control$indiv_flower)
 unique(treatment$indiv_flower)
 

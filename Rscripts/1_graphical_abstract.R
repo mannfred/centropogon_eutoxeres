@@ -18,7 +18,7 @@ library(tidyverse)
 
 
 # import ventral landmarks
-lm_data <- readland.tps(here("Data/raw_data/centropogon_pollination/graphical_abstract.TPS"), readcurves=T, specID='imageID')
+lm_data <- readland.tps(here("Data/raw_data/landmarking/graphical_abstract.TPS"), readcurves=T, specID='imageID')
 
 # Momocs::Ldk() converts to Coo object
 ventral <-
