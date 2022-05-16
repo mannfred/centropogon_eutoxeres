@@ -59,7 +59,6 @@ bc_df <- do.call(rbind, lapply(dflist, as.data.frame))
 # flowers 1_9-10, 2_6-7, 3_8-10, 4_6, have non-censored stage 1 data
 bc_df$status[c(33, 36, 67, 74, 105, 109, 113, 131)] <- 1
 
-# for use in '8_malefemale.rds'
 # saveRDS(bc_df, file=here('Data/derived_data/survdata_pollexcluded.rds'))
 
 # Survival function derived estimates of median duration per stage

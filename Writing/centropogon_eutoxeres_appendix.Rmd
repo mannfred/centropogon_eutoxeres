@@ -132,7 +132,7 @@ knitr::include_graphics(here("Figures/Figure_S12.tif"))
 
 ```{r tableS1}
 
-  tableS1 <- read.csv(here('Data/Table_S1_monitoredlocations.csv'), header=TRUE)
+  tableS1 <- read.csv(here('Data/raw_data/Table_S1_monitoredlocations.csv'), header=TRUE)
 
   knitr::kable(tableS1, caption = 'Table A1: Locations in San Pedro monitored for Sicklebill visitation to _C. granulosus_. The first column lists the  _C. granulosus_ individual identifiers.')
 
@@ -142,7 +142,7 @@ knitr::include_graphics(here("Figures/Figure_S12.tif"))
 \newpage
 ```{r tableS2}
 
-  tableS2 <- read.csv(here('Data/Table_S2_developmentstages.csv'), header=TRUE)
+  tableS2 <- read.csv(here('Data/raw_data/Table_S2_developmentstages.csv'), header=TRUE)
 
   knitr::kable(tableS2, caption = 'Table A2: Stages of floral development in _C. granulosus_.')
 
@@ -152,7 +152,7 @@ knitr::include_graphics(here("Figures/Figure_S12.tif"))
 \newpage
 ```{r tableS3}
 
-  tableS3 <- read.csv(here('Data/Table_S3_observationseutoxeres.csv'), header=TRUE)
+  tableS3 <- read.csv(here('Data/raw_data/Table_S3_observationseutoxeres.csv'), header=TRUE)
 
   knitr::kable(tableS3, caption = 'Table A3: Camera trap records of _E. condamini_.')
 
@@ -162,7 +162,7 @@ knitr::include_graphics(here("Figures/Figure_S12.tif"))
 \newpage
 ```{r tableS4}
 
-  tableS4 <- read.csv(here('Data/Table_S4_observationsschistes.csv'), header=TRUE)
+  tableS4 <- read.csv(here('Data/raw_data/Table_S4_observationsschistes.csv'), header=TRUE)
 
   knitr::kable(tableS4, caption = 'Table A4: Camera trap records of _S. geofryii_.')
 

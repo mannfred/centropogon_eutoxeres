@@ -56,7 +56,6 @@ ct_df <- do.call(rbind, lapply(dflist, as.data.frame))
 # flowers 1_17, 3_12-14, 7_11-12, 8_17-19, 9_18-20, 9_23 have non-censored stage 1 data
 ct_df$status[c(56, 132, 135, 137, 237, 239, 306, 309, 313, 383, 387, 390, 398)] <- 1
 
-# for use in '8_malefemale.rds'
 # saveRDS(ct_df, file=here('Data/derived_data/survdata_controls.rds'))
 
 

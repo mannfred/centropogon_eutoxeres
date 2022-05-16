@@ -213,6 +213,42 @@ Because hummingbird species generally adhere to a single foraging mode [@feinsin
 
 &emsp;&emsp; Pollinator specialization is likely to play an important role in the generation and/or maintenance of species in the mega-diverse Andean Lobelioids.  In this study, we confirmed the prediction that *C. granulosus* is pollinated exclusively by Buff-tailed Sicklebill (*E. condamini*) within our study site, where its congener, White-tipped Sicklebill (*E. aquila*), is absent. Furthermore, because Sicklebills exhibit traplining, we find evidence that specialization operates not only through corolla shape, but also the steady state flowering strategy. By documenting plant-pollinator interactions and phenological type, we hope to provide valuable ecological and natural history data needed to test the role of specialization in the rapid diversification of the Andean bellflowers. 
 
+&nbsp;
+&nbsp;
+
+#### Acknowledgments
+
+Access to field sites was made possible by the Servicio Nacional Forestal y de Fauna Silvestre (SERFOR) of Peru, and Daniel Blanco and the generous staff of the Cock-of-the-Rock Lodge, San Pedro, Peru. The faculty and staff at the Universidad Nacional de San Antonio Abad del Cusco (UNSAAC) and the Vargas (CUZ) herbarium graciously assisted with the permit application process. B. Freeman and M. Scholer organized ground transport to the field sites. J. Fahr, J. Ascher, and Y. Delago gave their expert identifications for Figures A5, A6, and A9 via iNaturalist. We thank L. Lagomarsino, A. Sargent, and R. Colwell for feedback and discussions that greatly improved the manuscript. We also thank the Editor, Associate Editor, and three anonymous reviewers for their thoughtful and constructive comments during the review process. M.B. acknowledges financial support from a Hesse Research Award in Ornithology, the Heliconia Society International, the University of British Columbia, and the Natural Sciences and Engineering Research Council (NSERC) of Canada Post-Graduate Scholarship program (GC-2017-Q4-00199).  Q.C. and J.J. are supported by the NSERC Discovery Grants program (RGPIN-2019-04041 and F18-05154, respectively). 
+
+&nbsp;
+&nbsp;
+
+
+#### Conflicts of Interest
+The authors declare no conflict of interest.
+
+&nbsp;
+&nbsp;
+
+#### Author Contributions
+
+Mannfred M.A. Boehm: Conceptualization (lead); data curation (lead), formal analysis (lead), Funding acquisition (equal), investigation (lead), methodology (equal), project administration (equal), validation 
+(equal), writing – original draft (lead), writing – review & editing (equal).
+
+David Guevara-Apaza: Investigation (supporting), project administration (equal), resources (supporting), writing – review & editing (supporting).
+
+Jill E. Jankowski: Conceptualization (supporting), funding acquisition (equal), investigation (supporting), project administration (supporting), resources (lead), supervision (lead), writing – review & editing (equal).
+
+Quentin Cronk: Conceptualization (equal), funding acquisition (equal), project administration (supporting), resources (lead), supervision (lead), validation (equal), writing – review & editing (equal).
+
+&nbsp;
+&nbsp;
+
+####Data Accessibility
+All data and R scripts are available in the Dryad repository https://doi.org/10.5061/dryad.ns1rn8pwb. These materials are also available as an RStudio Project at: https://github.com/mannfred/centropogon_eutoxeres.   
+
+
+
 \newpage
 #### Figure Legends
 
@@ -239,31 +275,6 @@ knitr::include_graphics(here("Figures/Figure_5.tif"))
 
 \newpage
 
-
-#### Data Accessibility
-All data are available in the Dryad repository XXX. All R scripts are available in the Zenodo repository XXX.  Data and R scripts are also available as an RStudio Project at: https://github.com/mannfred/centropogon_eutoxeres. 
-
-&nbsp;
-&nbsp;
-
-#### Competing Interests
-The authors have no competing interests to declare.
-
-&nbsp;
-&nbsp;
-
-#### Author Contributions
-
-M.B. and Q.C. designed the study, and D.G., J.J., and M.B. conducted the field work. M.B. analysed the data and wrote the first manuscript draft. All authors contributed to writing and editing the final manuscript. 
-
-&nbsp;
-&nbsp;
-
-#### Acknowledgments
-
-Access to field sites was made possible by the Servicio Nacional Forestal y de Fauna Silvestre (SERFOR) of Peru, and Daniel Blanco and the generous staff of the Cock-of-the-Rock Lodge, San Pedro, Peru. The faculty and staff at the Universidad Nacional de San Antonio Abad del Cusco (UNSAAC) and the Vargas (CUZ) herbarium graciously assisted with the permit application process. B. Freeman and M. Scholer organized ground transport to the field sites. J. Fahr, J. Ascher, and Y. Delago gave their expert identifications for Figures A5, A6, and A9 via iNaturalist. We thank L. Lagomarsino, A. Sargent, and R. Colwell for feedback and discussions that greatly improved the manuscript. We also thank the Editor, Associate Editor, and three anonymous reviewers for their thoughtful and constructive comments during the review process. M.B. acknowledges financial support from a Hesse Research Award in Ornithology, the Heliconia Society International, the University of British Columbia, and the Natural Sciences and Engineering Research Council (NSERC) of Canada Post-Graduate Scholarship program (GC-2017-Q4-00199).  Q.C. and J.J. are supported by the NSERC Discovery Grants program (RGPIN-2019-04041 and F18-05154, respectively). 
-
-\newpage
 
 # References
 

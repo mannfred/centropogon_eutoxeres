@@ -13,7 +13,7 @@ library(tidyverse)
 # for each inflorescence, 
 # calculate the number of days between anthesis events 
 bc_data <- 
-  read.csv(here('Data/Bird_cage_compiled.csv')) %>%
+  read.csv(here('Data/derived_data/Bird_cage_compiled.csv')) %>%
   as_tibble() %>% 
   filter(stage == 5) %>% #stage 5 = C1 = anthesis (remove other stages)
   group_by(indiv_flower) %>% 
@@ -38,7 +38,7 @@ ggplot(data = bc_data, aes(x = as.numeric(elapsed_days), y = flower_number, colo
 # for each inflorescence, 
 # calculate the number of days between anthesis events 
 ct_data <- 
-  read.csv(here('Data/No_treat_compiled.csv')) %>%
+  read.csv(here('Data/derived_data/No_treat_compiled.csv')) %>%
   as_tibble() %>% 
   filter(stage == 5) %>% #stage 5 = C1 = anthesis (remove other stages)
   group_by(indiv_flower) %>% 
@@ -63,10 +63,10 @@ ggplot(data = ct_data, aes(x = as.numeric(elapsed_days), y = flower_number, colo
 alldata <-
   full_join(bc_data, ct_data) %>% 
   ungroup() %>% 
-  mutate(treatment = c(rep("treatment", 33), rep("control", 43))) %>% 
+  mutate(treatment = c(rep("treatment", 33), rep("control", 39))) %>% 
   mutate(indiv_treatment = paste(treatment, indiv_ID)) 
 
-mycolours <- c(rep("#009E73", 33), rep("#E69F00", 43))
+mycolours <- c(rep("#009E73", 33), rep("#E69F00", 39))
 ggplot(data = alldata, aes(x = as.numeric(elapsed_days), y = flower_number, group = indiv_treatment)) +
   geom_point(size = 4, color = mycolours) +
   stat_smooth(method = 'lm', fullrange =TRUE, se = FALSE, aes(color = treatment)) +
